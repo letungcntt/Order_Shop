@@ -57,18 +57,11 @@
             this.AnimacionSidebar = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.Wrapper = new System.Windows.Forms.Panel();
             this.PanelGiaoDienNV = new Guna.UI.WinForms.GunaPanel();
-            this.btnChangeStatus = new Guna.UI.WinForms.GunaButton();
-            this.btnResetPassword = new Guna.UI.WinForms.GunaButton();
             this.cmbPosition = new Guna.UI.WinForms.GunaComboBox();
             this.lbPosition = new Guna.UI.WinForms.GunaLabel();
             this.BoxAvatar = new System.Windows.Forms.PictureBox();
             this.txtTimKiemNV = new Guna.UI.WinForms.GunaTextBox();
             this.btnTimKiemNV = new Guna.UI.WinForms.GunaButton();
-            this.btnUpdateAnh = new Guna.UI.WinForms.GunaButton();
-            this.btnRenewNV = new Guna.UI.WinForms.GunaButton();
-            this.btnXoaNV = new Guna.UI.WinForms.GunaButton();
-            this.btnCapNhatNV = new Guna.UI.WinForms.GunaButton();
-            this.btnThemNV = new Guna.UI.WinForms.GunaButton();
             this.cmbTimKiemNV = new Guna.UI.WinForms.GunaComboBox();
             this.dgvAccount = new Guna.UI.WinForms.GunaDataGridView();
             this.DateDOBNV = new Guna.UI.WinForms.GunaDateTimePicker();
@@ -120,6 +113,14 @@
             this.Temporizador = new System.Windows.Forms.Timer(this.components);
             this.MoverDashboard = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.gunaTransition1 = new Guna.UI.WinForms.GunaTransition(this.components);
+            this.btnThemNV = new Guna.UI.WinForms.GunaButton();
+            this.btnCapNhatNV = new Guna.UI.WinForms.GunaButton();
+            this.btnXoaNV = new Guna.UI.WinForms.GunaButton();
+            this.btnRenewNV = new Guna.UI.WinForms.GunaButton();
+            this.btnResetPassword = new Guna.UI.WinForms.GunaButton();
+            this.btnChangeStatus = new Guna.UI.WinForms.GunaButton();
+            this.btnUpdateAnh = new Guna.UI.WinForms.GunaButton();
+            this.PanelButtonNV = new Guna.UI.WinForms.GunaPanel();
             this.SidebarWrapper.SuspendLayout();
             this.Sidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -135,6 +136,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Restaurar)).BeginInit();
             this.MenuTop.SuspendLayout();
+            this.PanelButtonNV.SuspendLayout();
             this.SuspendLayout();
             // 
             // SidebarWrapper
@@ -577,7 +579,8 @@
             // 
             // Wrapper
             // 
-            this.Wrapper.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.Wrapper.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Wrapper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.Wrapper.Controls.Add(this.PanelGiaoDienNV);
@@ -592,21 +595,14 @@
             // 
             // PanelGiaoDienNV
             // 
-            this.PanelGiaoDienNV.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.PanelGiaoDienNV.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.PanelGiaoDienNV.Controls.Add(this.btnUpdateAnh);
-            this.PanelGiaoDienNV.Controls.Add(this.btnChangeStatus);
-            this.PanelGiaoDienNV.Controls.Add(this.btnResetPassword);
+            this.PanelGiaoDienNV.Controls.Add(this.PanelButtonNV);
             this.PanelGiaoDienNV.Controls.Add(this.cmbPosition);
             this.PanelGiaoDienNV.Controls.Add(this.lbPosition);
             this.PanelGiaoDienNV.Controls.Add(this.BoxAvatar);
             this.PanelGiaoDienNV.Controls.Add(this.txtTimKiemNV);
             this.PanelGiaoDienNV.Controls.Add(this.btnTimKiemNV);
-            this.PanelGiaoDienNV.Controls.Add(this.btnRenewNV);
-            this.PanelGiaoDienNV.Controls.Add(this.btnXoaNV);
-            this.PanelGiaoDienNV.Controls.Add(this.btnCapNhatNV);
-            this.PanelGiaoDienNV.Controls.Add(this.btnThemNV);
             this.PanelGiaoDienNV.Controls.Add(this.cmbTimKiemNV);
             this.PanelGiaoDienNV.Controls.Add(this.dgvAccount);
             this.PanelGiaoDienNV.Controls.Add(this.DateDOBNV);
@@ -626,67 +622,11 @@
             this.AnimacionSidebar.SetDecoration(this.PanelGiaoDienNV, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarBack.SetDecoration(this.PanelGiaoDienNV, BunifuAnimatorNS.DecorationType.None);
             this.gunaTransition1.SetDecoration(this.PanelGiaoDienNV, Guna.UI.Animation.DecorationType.None);
-            this.PanelGiaoDienNV.Location = new System.Drawing.Point(23, 24);
+            this.PanelGiaoDienNV.Location = new System.Drawing.Point(12, 14);
             this.PanelGiaoDienNV.Margin = new System.Windows.Forms.Padding(2);
             this.PanelGiaoDienNV.Name = "PanelGiaoDienNV";
-            this.PanelGiaoDienNV.Size = new System.Drawing.Size(845, 630);
+            this.PanelGiaoDienNV.Size = new System.Drawing.Size(864, 697);
             this.PanelGiaoDienNV.TabIndex = 1;
-            // 
-            // btnChangeStatus
-            // 
-            this.btnChangeStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnChangeStatus.AnimationHoverSpeed = 0.07F;
-            this.btnChangeStatus.AnimationSpeed = 0.03F;
-            this.btnChangeStatus.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnChangeStatus.BorderColor = System.Drawing.Color.Black;
-            this.AnimacionSidebar.SetDecoration(this.btnChangeStatus, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebarBack.SetDecoration(this.btnChangeStatus, BunifuAnimatorNS.DecorationType.None);
-            this.gunaTransition1.SetDecoration(this.btnChangeStatus, Guna.UI.Animation.DecorationType.None);
-            this.btnChangeStatus.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnChangeStatus.FocusedColor = System.Drawing.Color.Empty;
-            this.btnChangeStatus.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnChangeStatus.ForeColor = System.Drawing.Color.White;
-            this.btnChangeStatus.Image = ((System.Drawing.Image)(resources.GetObject("btnChangeStatus.Image")));
-            this.btnChangeStatus.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnChangeStatus.Location = new System.Drawing.Point(568, 308);
-            this.btnChangeStatus.Name = "btnChangeStatus";
-            this.btnChangeStatus.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnChangeStatus.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnChangeStatus.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnChangeStatus.OnHoverImage = null;
-            this.btnChangeStatus.OnPressedColor = System.Drawing.Color.Black;
-            this.btnChangeStatus.Size = new System.Drawing.Size(136, 42);
-            this.btnChangeStatus.TabIndex = 78;
-            this.btnChangeStatus.Text = "Vô Hiệu/ Kích Hoạt";
-            this.btnChangeStatus.Click += new System.EventHandler(this.btnChangeStatus_Click);
-            // 
-            // btnResetPassword
-            // 
-            this.btnResetPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnResetPassword.AnimationHoverSpeed = 0.07F;
-            this.btnResetPassword.AnimationSpeed = 0.03F;
-            this.btnResetPassword.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnResetPassword.BorderColor = System.Drawing.Color.Black;
-            this.AnimacionSidebar.SetDecoration(this.btnResetPassword, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebarBack.SetDecoration(this.btnResetPassword, BunifuAnimatorNS.DecorationType.None);
-            this.gunaTransition1.SetDecoration(this.btnResetPassword, Guna.UI.Animation.DecorationType.None);
-            this.btnResetPassword.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnResetPassword.FocusedColor = System.Drawing.Color.Empty;
-            this.btnResetPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnResetPassword.ForeColor = System.Drawing.Color.White;
-            this.btnResetPassword.Image = ((System.Drawing.Image)(resources.GetObject("btnResetPassword.Image")));
-            this.btnResetPassword.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnResetPassword.Location = new System.Drawing.Point(418, 308);
-            this.btnResetPassword.Name = "btnResetPassword";
-            this.btnResetPassword.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnResetPassword.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnResetPassword.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnResetPassword.OnHoverImage = null;
-            this.btnResetPassword.OnPressedColor = System.Drawing.Color.Black;
-            this.btnResetPassword.Size = new System.Drawing.Size(131, 42);
-            this.btnResetPassword.TabIndex = 77;
-            this.btnResetPassword.Text = "Reset Mật Khẩu";
-            this.btnResetPassword.Click += new System.EventHandler(this.btnResetPassword_Click);
             // 
             // cmbPosition
             // 
@@ -703,7 +643,7 @@
             this.cmbPosition.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbPosition.ForeColor = System.Drawing.Color.White;
             this.cmbPosition.FormattingEnabled = true;
-            this.cmbPosition.Location = new System.Drawing.Point(470, 104);
+            this.cmbPosition.Location = new System.Drawing.Point(489, 104);
             this.cmbPosition.Margin = new System.Windows.Forms.Padding(2);
             this.cmbPosition.Name = "cmbPosition";
             this.cmbPosition.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -720,7 +660,7 @@
             this.gunaTransition1.SetDecoration(this.lbPosition, Guna.UI.Animation.DecorationType.None);
             this.lbPosition.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPosition.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
-            this.lbPosition.Location = new System.Drawing.Point(467, 84);
+            this.lbPosition.Location = new System.Drawing.Point(486, 84);
             this.lbPosition.Name = "lbPosition";
             this.lbPosition.Size = new System.Drawing.Size(37, 17);
             this.lbPosition.TabIndex = 75;
@@ -728,11 +668,11 @@
             // 
             // BoxAvatar
             // 
-            this.BoxAvatar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BoxAvatar.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.gunaTransition1.SetDecoration(this.BoxAvatar, Guna.UI.Animation.DecorationType.None);
             this.AnimacionSidebarBack.SetDecoration(this.BoxAvatar, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebar.SetDecoration(this.BoxAvatar, BunifuAnimatorNS.DecorationType.None);
-            this.BoxAvatar.Location = new System.Drawing.Point(645, 105);
+            this.BoxAvatar.Location = new System.Drawing.Point(664, 105);
             this.BoxAvatar.Name = "BoxAvatar";
             this.BoxAvatar.Size = new System.Drawing.Size(175, 178);
             this.BoxAvatar.TabIndex = 71;
@@ -757,10 +697,11 @@
             this.txtTimKiemNV.Name = "txtTimKiemNV";
             this.txtTimKiemNV.PasswordChar = '\0';
             this.txtTimKiemNV.SelectedText = "";
-            this.txtTimKiemNV.Size = new System.Drawing.Size(388, 30);
+            this.txtTimKiemNV.Size = new System.Drawing.Size(407, 30);
             this.txtTimKiemNV.TabIndex = 70;
             this.txtTimKiemNV.Tag = "";
             this.txtTimKiemNV.Text = "Tìm Kiếm";
+            this.txtTimKiemNV.Enter += new System.EventHandler(this.txtTimKiemNV_Enter);
             // 
             // btnTimKiemNV
             // 
@@ -778,7 +719,7 @@
             this.btnTimKiemNV.ForeColor = System.Drawing.Color.White;
             this.btnTimKiemNV.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiemNV.Image")));
             this.btnTimKiemNV.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnTimKiemNV.Location = new System.Drawing.Point(660, 24);
+            this.btnTimKiemNV.Location = new System.Drawing.Point(679, 24);
             this.btnTimKiemNV.Name = "btnTimKiemNV";
             this.btnTimKiemNV.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnTimKiemNV.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -789,146 +730,6 @@
             this.btnTimKiemNV.TabIndex = 69;
             this.btnTimKiemNV.Text = "Tìm Kiếm";
             this.btnTimKiemNV.Click += new System.EventHandler(this.btnTimKiemNV_Click);
-            // 
-            // btnUpdateAnh
-            // 
-            this.btnUpdateAnh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnUpdateAnh.AnimationHoverSpeed = 0.07F;
-            this.btnUpdateAnh.AnimationSpeed = 0.03F;
-            this.btnUpdateAnh.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnUpdateAnh.BorderColor = System.Drawing.Color.Black;
-            this.AnimacionSidebar.SetDecoration(this.btnUpdateAnh, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebarBack.SetDecoration(this.btnUpdateAnh, BunifuAnimatorNS.DecorationType.None);
-            this.gunaTransition1.SetDecoration(this.btnUpdateAnh, Guna.UI.Animation.DecorationType.None);
-            this.btnUpdateAnh.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnUpdateAnh.FocusedColor = System.Drawing.Color.Empty;
-            this.btnUpdateAnh.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnUpdateAnh.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateAnh.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdateAnh.Image")));
-            this.btnUpdateAnh.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnUpdateAnh.Location = new System.Drawing.Point(713, 308);
-            this.btnUpdateAnh.Name = "btnUpdateAnh";
-            this.btnUpdateAnh.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnUpdateAnh.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnUpdateAnh.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnUpdateAnh.OnHoverImage = null;
-            this.btnUpdateAnh.OnPressedColor = System.Drawing.Color.Black;
-            this.btnUpdateAnh.Size = new System.Drawing.Size(94, 42);
-            this.btnUpdateAnh.TabIndex = 68;
-            this.btnUpdateAnh.Text = "Chọn Ảnh";
-            this.btnUpdateAnh.Click += new System.EventHandler(this.btnUpdateAnh_Click);
-            // 
-            // btnRenewNV
-            // 
-            this.btnRenewNV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRenewNV.AnimationHoverSpeed = 0.07F;
-            this.btnRenewNV.AnimationSpeed = 0.03F;
-            this.btnRenewNV.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnRenewNV.BorderColor = System.Drawing.Color.Black;
-            this.AnimacionSidebar.SetDecoration(this.btnRenewNV, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebarBack.SetDecoration(this.btnRenewNV, BunifuAnimatorNS.DecorationType.None);
-            this.gunaTransition1.SetDecoration(this.btnRenewNV, Guna.UI.Animation.DecorationType.None);
-            this.btnRenewNV.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnRenewNV.FocusedColor = System.Drawing.Color.Empty;
-            this.btnRenewNV.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnRenewNV.ForeColor = System.Drawing.Color.White;
-            this.btnRenewNV.Image = ((System.Drawing.Image)(resources.GetObject("btnRenewNV.Image")));
-            this.btnRenewNV.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnRenewNV.Location = new System.Drawing.Point(326, 308);
-            this.btnRenewNV.Name = "btnRenewNV";
-            this.btnRenewNV.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnRenewNV.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnRenewNV.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnRenewNV.OnHoverImage = null;
-            this.btnRenewNV.OnPressedColor = System.Drawing.Color.Black;
-            this.btnRenewNV.Size = new System.Drawing.Size(86, 42);
-            this.btnRenewNV.TabIndex = 67;
-            this.btnRenewNV.Text = "Làm Mới";
-            this.btnRenewNV.Click += new System.EventHandler(this.btnRenewNV_Click);
-            // 
-            // btnXoaNV
-            // 
-            this.btnXoaNV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnXoaNV.AnimationHoverSpeed = 0.07F;
-            this.btnXoaNV.AnimationSpeed = 0.03F;
-            this.btnXoaNV.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnXoaNV.BorderColor = System.Drawing.Color.Black;
-            this.AnimacionSidebar.SetDecoration(this.btnXoaNV, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebarBack.SetDecoration(this.btnXoaNV, BunifuAnimatorNS.DecorationType.None);
-            this.gunaTransition1.SetDecoration(this.btnXoaNV, Guna.UI.Animation.DecorationType.None);
-            this.btnXoaNV.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnXoaNV.FocusedColor = System.Drawing.Color.Empty;
-            this.btnXoaNV.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnXoaNV.ForeColor = System.Drawing.Color.White;
-            this.btnXoaNV.Image = ((System.Drawing.Image)(resources.GetObject("btnXoaNV.Image")));
-            this.btnXoaNV.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnXoaNV.Location = new System.Drawing.Point(244, 308);
-            this.btnXoaNV.Name = "btnXoaNV";
-            this.btnXoaNV.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnXoaNV.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnXoaNV.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnXoaNV.OnHoverImage = null;
-            this.btnXoaNV.OnPressedColor = System.Drawing.Color.Black;
-            this.btnXoaNV.Size = new System.Drawing.Size(76, 42);
-            this.btnXoaNV.TabIndex = 66;
-            this.btnXoaNV.Text = "Xóa";
-            this.btnXoaNV.Click += new System.EventHandler(this.btnXoaNV_Click);
-            // 
-            // btnCapNhatNV
-            // 
-            this.btnCapNhatNV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCapNhatNV.AnimationHoverSpeed = 0.07F;
-            this.btnCapNhatNV.AnimationSpeed = 0.03F;
-            this.btnCapNhatNV.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnCapNhatNV.BorderColor = System.Drawing.Color.Black;
-            this.AnimacionSidebar.SetDecoration(this.btnCapNhatNV, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebarBack.SetDecoration(this.btnCapNhatNV, BunifuAnimatorNS.DecorationType.None);
-            this.gunaTransition1.SetDecoration(this.btnCapNhatNV, Guna.UI.Animation.DecorationType.None);
-            this.btnCapNhatNV.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnCapNhatNV.FocusedColor = System.Drawing.Color.Empty;
-            this.btnCapNhatNV.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnCapNhatNV.ForeColor = System.Drawing.Color.White;
-            this.btnCapNhatNV.Image = ((System.Drawing.Image)(resources.GetObject("btnCapNhatNV.Image")));
-            this.btnCapNhatNV.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnCapNhatNV.Location = new System.Drawing.Point(147, 308);
-            this.btnCapNhatNV.Name = "btnCapNhatNV";
-            this.btnCapNhatNV.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnCapNhatNV.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnCapNhatNV.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnCapNhatNV.OnHoverImage = null;
-            this.btnCapNhatNV.OnPressedColor = System.Drawing.Color.Black;
-            this.btnCapNhatNV.Size = new System.Drawing.Size(91, 42);
-            this.btnCapNhatNV.TabIndex = 65;
-            this.btnCapNhatNV.Text = "Cập Nhật";
-            this.btnCapNhatNV.Click += new System.EventHandler(this.btnCapNhatNV_Click);
-            // 
-            // btnThemNV
-            // 
-            this.btnThemNV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnThemNV.AnimationHoverSpeed = 0.07F;
-            this.btnThemNV.AnimationSpeed = 0.03F;
-            this.btnThemNV.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnThemNV.BorderColor = System.Drawing.Color.Black;
-            this.AnimacionSidebar.SetDecoration(this.btnThemNV, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebarBack.SetDecoration(this.btnThemNV, BunifuAnimatorNS.DecorationType.None);
-            this.gunaTransition1.SetDecoration(this.btnThemNV, Guna.UI.Animation.DecorationType.None);
-            this.btnThemNV.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnThemNV.FocusedColor = System.Drawing.Color.Empty;
-            this.btnThemNV.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnThemNV.ForeColor = System.Drawing.Color.White;
-            this.btnThemNV.Image = ((System.Drawing.Image)(resources.GetObject("btnThemNV.Image")));
-            this.btnThemNV.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnThemNV.Location = new System.Drawing.Point(49, 308);
-            this.btnThemNV.Name = "btnThemNV";
-            this.btnThemNV.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnThemNV.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnThemNV.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnThemNV.OnHoverImage = null;
-            this.btnThemNV.OnPressedColor = System.Drawing.Color.Black;
-            this.btnThemNV.Size = new System.Drawing.Size(92, 42);
-            this.btnThemNV.TabIndex = 64;
-            this.btnThemNV.Text = "Thêm";
-            this.btnThemNV.Click += new System.EventHandler(this.btnThemNV_Click);
             // 
             // cmbTimKiemNV
             // 
@@ -945,7 +746,7 @@
             this.cmbTimKiemNV.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbTimKiemNV.ForeColor = System.Drawing.Color.White;
             this.cmbTimKiemNV.FormattingEnabled = true;
-            this.cmbTimKiemNV.Location = new System.Drawing.Point(499, 24);
+            this.cmbTimKiemNV.Location = new System.Drawing.Point(518, 24);
             this.cmbTimKiemNV.Name = "cmbTimKiemNV";
             this.cmbTimKiemNV.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cmbTimKiemNV.OnHoverItemForeColor = System.Drawing.Color.White;
@@ -991,7 +792,7 @@
             this.dgvAccount.RowHeadersVisible = false;
             this.dgvAccount.RowHeadersWidth = 51;
             this.dgvAccount.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAccount.Size = new System.Drawing.Size(816, 396);
+            this.dgvAccount.Size = new System.Drawing.Size(835, 463);
             this.dgvAccount.TabIndex = 62;
             this.dgvAccount.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.dgvAccount.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -1039,7 +840,7 @@
             this.DateDOBNV.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.DateDOBNV.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.DateDOBNV.OnPressedColor = System.Drawing.Color.Black;
-            this.DateDOBNV.Size = new System.Drawing.Size(164, 37);
+            this.DateDOBNV.Size = new System.Drawing.Size(183, 37);
             this.DateDOBNV.TabIndex = 61;
             this.DateDOBNV.Text = "Tuesday, June 23, 2020";
             this.DateDOBNV.Value = new System.DateTime(2020, 6, 23, 12, 39, 18, 131);
@@ -1136,7 +937,7 @@
             this.txtUsername.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtUsername.ForeColor = System.Drawing.Color.White;
-            this.txtUsername.Location = new System.Drawing.Point(464, 177);
+            this.txtUsername.Location = new System.Drawing.Point(483, 177);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.PasswordChar = '\0';
             this.txtUsername.SelectedText = "";
@@ -1152,7 +953,7 @@
             this.gunaTransition1.SetDecoration(this.gunaLabel10, Guna.UI.Animation.DecorationType.None);
             this.gunaLabel10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
-            this.gunaLabel10.Location = new System.Drawing.Point(460, 158);
+            this.gunaLabel10.Location = new System.Drawing.Point(479, 158);
             this.gunaLabel10.Name = "gunaLabel10";
             this.gunaLabel10.Size = new System.Drawing.Size(67, 17);
             this.gunaLabel10.TabIndex = 57;
@@ -1178,7 +979,7 @@
             this.txtEmailNV.Name = "txtEmailNV";
             this.txtEmailNV.PasswordChar = '\0';
             this.txtEmailNV.SelectedText = "";
-            this.txtEmailNV.Size = new System.Drawing.Size(164, 37);
+            this.txtEmailNV.Size = new System.Drawing.Size(183, 37);
             this.txtEmailNV.TabIndex = 52;
             // 
             // gunaLabel8
@@ -1213,7 +1014,7 @@
             // 
             // txtDiaChiNV
             // 
-            this.txtDiaChiNV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDiaChiNV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDiaChiNV.BackColor = System.Drawing.Color.Transparent;
             this.txtDiaChiNV.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(41)))), ((int)(((byte)(86)))));
             this.txtDiaChiNV.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(50)))), ((int)(((byte)(101)))));
@@ -1227,11 +1028,11 @@
             this.txtDiaChiNV.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtDiaChiNV.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtDiaChiNV.ForeColor = System.Drawing.Color.White;
-            this.txtDiaChiNV.Location = new System.Drawing.Point(269, 104);
+            this.txtDiaChiNV.Location = new System.Drawing.Point(267, 104);
             this.txtDiaChiNV.Name = "txtDiaChiNV";
             this.txtDiaChiNV.PasswordChar = '\0';
             this.txtDiaChiNV.SelectedText = "";
-            this.txtDiaChiNV.Size = new System.Drawing.Size(164, 37);
+            this.txtDiaChiNV.Size = new System.Drawing.Size(185, 37);
             this.txtDiaChiNV.TabIndex = 51;
             // 
             // lbDiaChiNhanVien
@@ -1321,7 +1122,7 @@
             this.PanelDSKhachHang.Location = new System.Drawing.Point(23, 24);
             this.PanelDSKhachHang.Margin = new System.Windows.Forms.Padding(2);
             this.PanelDSKhachHang.Name = "PanelDSKhachHang";
-            this.PanelDSKhachHang.Size = new System.Drawing.Size(845, 708);
+            this.PanelDSKhachHang.Size = new System.Drawing.Size(845, 685);
             this.PanelDSKhachHang.TabIndex = 0;
             this.PanelDSKhachHang.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelDSKhachHang_Paint);
             // 
@@ -1340,7 +1141,7 @@
             this.txtSearch.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSearch.ForeColor = System.Drawing.Color.Silver;
-            this.txtSearch.Location = new System.Drawing.Point(73, 62);
+            this.txtSearch.Location = new System.Drawing.Point(73, 50);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
             this.txtSearch.SelectedText = "";
@@ -1365,7 +1166,7 @@
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
             this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
             this.btnTimKiem.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnTimKiem.Location = new System.Drawing.Point(652, 60);
+            this.btnTimKiem.Location = new System.Drawing.Point(652, 48);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnTimKiem.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -1393,7 +1194,7 @@
             this.btnRenew.ForeColor = System.Drawing.Color.White;
             this.btnRenew.Image = ((System.Drawing.Image)(resources.GetObject("btnRenew.Image")));
             this.btnRenew.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnRenew.Location = new System.Drawing.Point(697, 338);
+            this.btnRenew.Location = new System.Drawing.Point(697, 326);
             this.btnRenew.Name = "btnRenew";
             this.btnRenew.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnRenew.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -1421,7 +1222,7 @@
             this.btnDeleteCustomer.ForeColor = System.Drawing.Color.White;
             this.btnDeleteCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteCustomer.Image")));
             this.btnDeleteCustomer.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnDeleteCustomer.Location = new System.Drawing.Point(480, 338);
+            this.btnDeleteCustomer.Location = new System.Drawing.Point(480, 326);
             this.btnDeleteCustomer.Name = "btnDeleteCustomer";
             this.btnDeleteCustomer.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnDeleteCustomer.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -1449,7 +1250,7 @@
             this.btnUpdateCustomer.ForeColor = System.Drawing.Color.White;
             this.btnUpdateCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdateCustomer.Image")));
             this.btnUpdateCustomer.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnUpdateCustomer.Location = new System.Drawing.Point(252, 338);
+            this.btnUpdateCustomer.Location = new System.Drawing.Point(252, 326);
             this.btnUpdateCustomer.Name = "btnUpdateCustomer";
             this.btnUpdateCustomer.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnUpdateCustomer.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -1477,7 +1278,7 @@
             this.btnThemCustomer.ForeColor = System.Drawing.Color.White;
             this.btnThemCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnThemCustomer.Image")));
             this.btnThemCustomer.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnThemCustomer.Location = new System.Drawing.Point(36, 338);
+            this.btnThemCustomer.Location = new System.Drawing.Point(36, 326);
             this.btnThemCustomer.Name = "btnThemCustomer";
             this.btnThemCustomer.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnThemCustomer.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -1504,7 +1305,7 @@
             this.cmbTimKiem.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbTimKiem.ForeColor = System.Drawing.Color.White;
             this.cmbTimKiem.FormattingEnabled = true;
-            this.cmbTimKiem.Location = new System.Drawing.Point(467, 62);
+            this.cmbTimKiem.Location = new System.Drawing.Point(467, 50);
             this.cmbTimKiem.Name = "cmbTimKiem";
             this.cmbTimKiem.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cmbTimKiem.OnHoverItemForeColor = System.Drawing.Color.White;
@@ -1526,7 +1327,7 @@
             this.cmbLevel.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbLevel.ForeColor = System.Drawing.Color.White;
             this.cmbLevel.FormattingEnabled = true;
-            this.cmbLevel.Location = new System.Drawing.Point(641, 227);
+            this.cmbLevel.Location = new System.Drawing.Point(641, 215);
             this.cmbLevel.Name = "cmbLevel";
             this.cmbLevel.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cmbLevel.OnHoverItemForeColor = System.Drawing.Color.White;
@@ -1566,7 +1367,7 @@
             this.dgvCustomer.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvCustomer.EnableHeadersVisualStyles = false;
             this.dgvCustomer.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvCustomer.Location = new System.Drawing.Point(11, 443);
+            this.dgvCustomer.Location = new System.Drawing.Point(11, 420);
             this.dgvCustomer.Name = "dgvCustomer";
             this.dgvCustomer.RowHeadersVisible = false;
             this.dgvCustomer.RowHeadersWidth = 51;
@@ -1611,7 +1412,7 @@
             this.DateDOB.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.DateDOB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.DateDOB.ForeColor = System.Drawing.Color.White;
-            this.DateDOB.Location = new System.Drawing.Point(641, 144);
+            this.DateDOB.Location = new System.Drawing.Point(641, 132);
             this.DateDOB.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.DateDOB.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.DateDOB.Name = "DateDOB";
@@ -1640,7 +1441,7 @@
             this.txtSDT.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtSDT.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSDT.ForeColor = System.Drawing.Color.White;
-            this.txtSDT.Location = new System.Drawing.Point(36, 284);
+            this.txtSDT.Location = new System.Drawing.Point(36, 272);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.PasswordChar = '\0';
             this.txtSDT.SelectedText = "";
@@ -1656,7 +1457,7 @@
             this.gunaTransition1.SetDecoration(this.gunaLabel6, Guna.UI.Animation.DecorationType.None);
             this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
-            this.gunaLabel6.Location = new System.Drawing.Point(33, 265);
+            this.gunaLabel6.Location = new System.Drawing.Point(33, 253);
             this.gunaLabel6.Name = "gunaLabel6";
             this.gunaLabel6.Size = new System.Drawing.Size(31, 17);
             this.gunaLabel6.TabIndex = 37;
@@ -1678,7 +1479,7 @@
             this.txtFullName.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtFullName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtFullName.ForeColor = System.Drawing.Color.White;
-            this.txtFullName.Location = new System.Drawing.Point(36, 217);
+            this.txtFullName.Location = new System.Drawing.Point(36, 205);
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.PasswordChar = '\0';
             this.txtFullName.SelectedText = "";
@@ -1694,7 +1495,7 @@
             this.gunaTransition1.SetDecoration(this.gunaLabel1, Guna.UI.Animation.DecorationType.None);
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
-            this.gunaLabel1.Location = new System.Drawing.Point(33, 197);
+            this.gunaLabel1.Location = new System.Drawing.Point(33, 185);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(102, 17);
             this.gunaLabel1.TabIndex = 36;
@@ -1716,7 +1517,7 @@
             this.txtEmail.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtEmail.ForeColor = System.Drawing.Color.White;
-            this.txtEmail.Location = new System.Drawing.Point(339, 217);
+            this.txtEmail.Location = new System.Drawing.Point(339, 205);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PasswordChar = '\0';
             this.txtEmail.SelectedText = "";
@@ -1732,7 +1533,7 @@
             this.gunaTransition1.SetDecoration(this.gunaLabel5, Guna.UI.Animation.DecorationType.None);
             this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
-            this.gunaLabel5.Location = new System.Drawing.Point(638, 197);
+            this.gunaLabel5.Location = new System.Drawing.Point(638, 185);
             this.gunaLabel5.Name = "gunaLabel5";
             this.gunaLabel5.Size = new System.Drawing.Size(37, 17);
             this.gunaLabel5.TabIndex = 35;
@@ -1747,7 +1548,7 @@
             this.gunaTransition1.SetDecoration(this.gunaLabel3, Guna.UI.Animation.DecorationType.None);
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
-            this.gunaLabel3.Location = new System.Drawing.Point(336, 197);
+            this.gunaLabel3.Location = new System.Drawing.Point(336, 185);
             this.gunaLabel3.Name = "gunaLabel3";
             this.gunaLabel3.Size = new System.Drawing.Size(39, 17);
             this.gunaLabel3.TabIndex = 34;
@@ -1762,7 +1563,7 @@
             this.gunaTransition1.SetDecoration(this.gunaLabel4, Guna.UI.Animation.DecorationType.None);
             this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
-            this.gunaLabel4.Location = new System.Drawing.Point(638, 123);
+            this.gunaLabel4.Location = new System.Drawing.Point(638, 111);
             this.gunaLabel4.Name = "gunaLabel4";
             this.gunaLabel4.Size = new System.Drawing.Size(66, 17);
             this.gunaLabel4.TabIndex = 33;
@@ -1784,7 +1585,7 @@
             this.txtAddress.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtAddress.ForeColor = System.Drawing.Color.White;
-            this.txtAddress.Location = new System.Drawing.Point(339, 144);
+            this.txtAddress.Location = new System.Drawing.Point(339, 132);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.PasswordChar = '\0';
             this.txtAddress.SelectedText = "";
@@ -1800,7 +1601,7 @@
             this.gunaTransition1.SetDecoration(this.gunaLabel2, Guna.UI.Animation.DecorationType.None);
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
-            this.gunaLabel2.Location = new System.Drawing.Point(336, 123);
+            this.gunaLabel2.Location = new System.Drawing.Point(336, 111);
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(47, 17);
             this.gunaLabel2.TabIndex = 32;
@@ -1822,7 +1623,7 @@
             this.txtCustomer_id.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtCustomer_id.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCustomer_id.ForeColor = System.Drawing.Color.White;
-            this.txtCustomer_id.Location = new System.Drawing.Point(36, 144);
+            this.txtCustomer_id.Location = new System.Drawing.Point(36, 132);
             this.txtCustomer_id.Name = "txtCustomer_id";
             this.txtCustomer_id.PasswordChar = '\0';
             this.txtCustomer_id.SelectedText = "";
@@ -1838,7 +1639,7 @@
             this.gunaTransition1.SetDecoration(this.gunaLabel7, Guna.UI.Animation.DecorationType.None);
             this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
-            this.gunaLabel7.Location = new System.Drawing.Point(33, 123);
+            this.gunaLabel7.Location = new System.Drawing.Point(33, 111);
             this.gunaLabel7.Name = "gunaLabel7";
             this.gunaLabel7.Size = new System.Drawing.Size(97, 17);
             this.gunaLabel7.TabIndex = 38;
@@ -2010,6 +1811,219 @@
             animation3.TransparencyCoeff = 0F;
             this.gunaTransition1.DefaultAnimation = animation3;
             // 
+            // btnThemNV
+            // 
+            this.btnThemNV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnThemNV.AnimationHoverSpeed = 0.07F;
+            this.btnThemNV.AnimationSpeed = 0.03F;
+            this.btnThemNV.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnThemNV.BorderColor = System.Drawing.Color.Black;
+            this.AnimacionSidebar.SetDecoration(this.btnThemNV, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.btnThemNV, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.btnThemNV, Guna.UI.Animation.DecorationType.None);
+            this.btnThemNV.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnThemNV.FocusedColor = System.Drawing.Color.Empty;
+            this.btnThemNV.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnThemNV.ForeColor = System.Drawing.Color.White;
+            this.btnThemNV.Image = ((System.Drawing.Image)(resources.GetObject("btnThemNV.Image")));
+            this.btnThemNV.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnThemNV.Location = new System.Drawing.Point(14, 9);
+            this.btnThemNV.Name = "btnThemNV";
+            this.btnThemNV.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnThemNV.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnThemNV.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnThemNV.OnHoverImage = null;
+            this.btnThemNV.OnPressedColor = System.Drawing.Color.Black;
+            this.btnThemNV.Size = new System.Drawing.Size(111, 42);
+            this.btnThemNV.TabIndex = 64;
+            this.btnThemNV.Text = "Thêm";
+            this.btnThemNV.Click += new System.EventHandler(this.btnThemNV_Click);
+            // 
+            // btnCapNhatNV
+            // 
+            this.btnCapNhatNV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCapNhatNV.AnimationHoverSpeed = 0.07F;
+            this.btnCapNhatNV.AnimationSpeed = 0.03F;
+            this.btnCapNhatNV.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnCapNhatNV.BorderColor = System.Drawing.Color.Black;
+            this.AnimacionSidebar.SetDecoration(this.btnCapNhatNV, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.btnCapNhatNV, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.btnCapNhatNV, Guna.UI.Animation.DecorationType.None);
+            this.btnCapNhatNV.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnCapNhatNV.FocusedColor = System.Drawing.Color.Empty;
+            this.btnCapNhatNV.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCapNhatNV.ForeColor = System.Drawing.Color.White;
+            this.btnCapNhatNV.Image = ((System.Drawing.Image)(resources.GetObject("btnCapNhatNV.Image")));
+            this.btnCapNhatNV.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnCapNhatNV.Location = new System.Drawing.Point(112, 9);
+            this.btnCapNhatNV.Name = "btnCapNhatNV";
+            this.btnCapNhatNV.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnCapNhatNV.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnCapNhatNV.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnCapNhatNV.OnHoverImage = null;
+            this.btnCapNhatNV.OnPressedColor = System.Drawing.Color.Black;
+            this.btnCapNhatNV.Size = new System.Drawing.Size(110, 42);
+            this.btnCapNhatNV.TabIndex = 65;
+            this.btnCapNhatNV.Text = "Cập Nhật";
+            this.btnCapNhatNV.Click += new System.EventHandler(this.btnCapNhatNV_Click);
+            // 
+            // btnXoaNV
+            // 
+            this.btnXoaNV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnXoaNV.AnimationHoverSpeed = 0.07F;
+            this.btnXoaNV.AnimationSpeed = 0.03F;
+            this.btnXoaNV.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnXoaNV.BorderColor = System.Drawing.Color.Black;
+            this.AnimacionSidebar.SetDecoration(this.btnXoaNV, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.btnXoaNV, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.btnXoaNV, Guna.UI.Animation.DecorationType.None);
+            this.btnXoaNV.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnXoaNV.FocusedColor = System.Drawing.Color.Empty;
+            this.btnXoaNV.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnXoaNV.ForeColor = System.Drawing.Color.White;
+            this.btnXoaNV.Image = ((System.Drawing.Image)(resources.GetObject("btnXoaNV.Image")));
+            this.btnXoaNV.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnXoaNV.Location = new System.Drawing.Point(209, 9);
+            this.btnXoaNV.Name = "btnXoaNV";
+            this.btnXoaNV.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnXoaNV.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnXoaNV.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnXoaNV.OnHoverImage = null;
+            this.btnXoaNV.OnPressedColor = System.Drawing.Color.Black;
+            this.btnXoaNV.Size = new System.Drawing.Size(95, 42);
+            this.btnXoaNV.TabIndex = 66;
+            this.btnXoaNV.Text = "Xóa";
+            this.btnXoaNV.Click += new System.EventHandler(this.btnXoaNV_Click);
+            // 
+            // btnRenewNV
+            // 
+            this.btnRenewNV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRenewNV.AnimationHoverSpeed = 0.07F;
+            this.btnRenewNV.AnimationSpeed = 0.03F;
+            this.btnRenewNV.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnRenewNV.BorderColor = System.Drawing.Color.Black;
+            this.AnimacionSidebar.SetDecoration(this.btnRenewNV, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.btnRenewNV, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.btnRenewNV, Guna.UI.Animation.DecorationType.None);
+            this.btnRenewNV.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnRenewNV.FocusedColor = System.Drawing.Color.Empty;
+            this.btnRenewNV.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRenewNV.ForeColor = System.Drawing.Color.White;
+            this.btnRenewNV.Image = ((System.Drawing.Image)(resources.GetObject("btnRenewNV.Image")));
+            this.btnRenewNV.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnRenewNV.Location = new System.Drawing.Point(291, 9);
+            this.btnRenewNV.Name = "btnRenewNV";
+            this.btnRenewNV.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnRenewNV.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnRenewNV.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnRenewNV.OnHoverImage = null;
+            this.btnRenewNV.OnPressedColor = System.Drawing.Color.Black;
+            this.btnRenewNV.Size = new System.Drawing.Size(105, 42);
+            this.btnRenewNV.TabIndex = 67;
+            this.btnRenewNV.Text = "Làm Mới";
+            this.btnRenewNV.Click += new System.EventHandler(this.btnRenewNV_Click);
+            // 
+            // btnResetPassword
+            // 
+            this.btnResetPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnResetPassword.AnimationHoverSpeed = 0.07F;
+            this.btnResetPassword.AnimationSpeed = 0.03F;
+            this.btnResetPassword.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnResetPassword.BorderColor = System.Drawing.Color.Black;
+            this.AnimacionSidebar.SetDecoration(this.btnResetPassword, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.btnResetPassword, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.btnResetPassword, Guna.UI.Animation.DecorationType.None);
+            this.btnResetPassword.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnResetPassword.FocusedColor = System.Drawing.Color.Empty;
+            this.btnResetPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnResetPassword.ForeColor = System.Drawing.Color.White;
+            this.btnResetPassword.Image = ((System.Drawing.Image)(resources.GetObject("btnResetPassword.Image")));
+            this.btnResetPassword.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnResetPassword.Location = new System.Drawing.Point(383, 9);
+            this.btnResetPassword.Name = "btnResetPassword";
+            this.btnResetPassword.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnResetPassword.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnResetPassword.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnResetPassword.OnHoverImage = null;
+            this.btnResetPassword.OnPressedColor = System.Drawing.Color.Black;
+            this.btnResetPassword.Size = new System.Drawing.Size(150, 42);
+            this.btnResetPassword.TabIndex = 77;
+            this.btnResetPassword.Text = "Reset Mật Khẩu";
+            this.btnResetPassword.Click += new System.EventHandler(this.btnResetPassword_Click);
+            // 
+            // btnChangeStatus
+            // 
+            this.btnChangeStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnChangeStatus.AnimationHoverSpeed = 0.07F;
+            this.btnChangeStatus.AnimationSpeed = 0.03F;
+            this.btnChangeStatus.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnChangeStatus.BorderColor = System.Drawing.Color.Black;
+            this.AnimacionSidebar.SetDecoration(this.btnChangeStatus, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.btnChangeStatus, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.btnChangeStatus, Guna.UI.Animation.DecorationType.None);
+            this.btnChangeStatus.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnChangeStatus.FocusedColor = System.Drawing.Color.Empty;
+            this.btnChangeStatus.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnChangeStatus.ForeColor = System.Drawing.Color.White;
+            this.btnChangeStatus.Image = ((System.Drawing.Image)(resources.GetObject("btnChangeStatus.Image")));
+            this.btnChangeStatus.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnChangeStatus.Location = new System.Drawing.Point(520, 9);
+            this.btnChangeStatus.Name = "btnChangeStatus";
+            this.btnChangeStatus.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnChangeStatus.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnChangeStatus.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnChangeStatus.OnHoverImage = null;
+            this.btnChangeStatus.OnPressedColor = System.Drawing.Color.Black;
+            this.btnChangeStatus.Size = new System.Drawing.Size(168, 42);
+            this.btnChangeStatus.TabIndex = 78;
+            this.btnChangeStatus.Text = "Vô Hiệu/ Kích Hoạt";
+            this.btnChangeStatus.Click += new System.EventHandler(this.btnChangeStatus_Click);
+            // 
+            // btnUpdateAnh
+            // 
+            this.btnUpdateAnh.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnUpdateAnh.AnimationHoverSpeed = 0.07F;
+            this.btnUpdateAnh.AnimationSpeed = 0.03F;
+            this.btnUpdateAnh.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnUpdateAnh.BorderColor = System.Drawing.Color.Black;
+            this.AnimacionSidebar.SetDecoration(this.btnUpdateAnh, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.btnUpdateAnh, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.btnUpdateAnh, Guna.UI.Animation.DecorationType.None);
+            this.btnUpdateAnh.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnUpdateAnh.FocusedColor = System.Drawing.Color.Empty;
+            this.btnUpdateAnh.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnUpdateAnh.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateAnh.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdateAnh.Image")));
+            this.btnUpdateAnh.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnUpdateAnh.Location = new System.Drawing.Point(697, 9);
+            this.btnUpdateAnh.Name = "btnUpdateAnh";
+            this.btnUpdateAnh.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnUpdateAnh.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnUpdateAnh.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnUpdateAnh.OnHoverImage = null;
+            this.btnUpdateAnh.OnPressedColor = System.Drawing.Color.Black;
+            this.btnUpdateAnh.Size = new System.Drawing.Size(94, 42);
+            this.btnUpdateAnh.TabIndex = 68;
+            this.btnUpdateAnh.Text = "Chọn Ảnh";
+            this.btnUpdateAnh.Click += new System.EventHandler(this.btnUpdateAnh_Click);
+            // 
+            // PanelButtonNV
+            // 
+            this.PanelButtonNV.Controls.Add(this.btnUpdateAnh);
+            this.PanelButtonNV.Controls.Add(this.btnResetPassword);
+            this.PanelButtonNV.Controls.Add(this.btnCapNhatNV);
+            this.PanelButtonNV.Controls.Add(this.btnChangeStatus);
+            this.PanelButtonNV.Controls.Add(this.btnRenewNV);
+            this.PanelButtonNV.Controls.Add(this.btnThemNV);
+            this.PanelButtonNV.Controls.Add(this.btnXoaNV);
+            this.AnimacionSidebar.SetDecoration(this.PanelButtonNV, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.PanelButtonNV, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.PanelButtonNV, Guna.UI.Animation.DecorationType.None);
+            this.PanelButtonNV.Location = new System.Drawing.Point(37, 300);
+            this.PanelButtonNV.Name = "PanelButtonNV";
+            this.PanelButtonNV.Size = new System.Drawing.Size(802, 59);
+            this.PanelButtonNV.TabIndex = 77;
+            // 
             // TrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2045,6 +2059,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Restaurar)).EndInit();
             this.MenuTop.ResumeLayout(false);
             this.MenuTop.PerformLayout();
+            this.PanelButtonNV.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2106,11 +2121,6 @@
         private System.Windows.Forms.PictureBox BoxAvatar;
         private Guna.UI.WinForms.GunaTextBox txtTimKiemNV;
         private Guna.UI.WinForms.GunaButton btnTimKiemNV;
-        private Guna.UI.WinForms.GunaButton btnUpdateAnh;
-        private Guna.UI.WinForms.GunaButton btnRenewNV;
-        private Guna.UI.WinForms.GunaButton btnXoaNV;
-        private Guna.UI.WinForms.GunaButton btnCapNhatNV;
-        private Guna.UI.WinForms.GunaButton btnThemNV;
         private Guna.UI.WinForms.GunaComboBox cmbTimKiemNV;
         private Guna.UI.WinForms.GunaDataGridView dgvAccount;
         private Guna.UI.WinForms.GunaDateTimePicker DateDOBNV;
@@ -2127,10 +2137,16 @@
         private Guna.UI.WinForms.GunaLabel lbMaNhanVien;
         private Guna.UI.WinForms.GunaComboBox cmbPosition;
         private Guna.UI.WinForms.GunaLabel lbPosition;
-        private Guna.UI.WinForms.GunaButton btnChangeStatus;
-        private Guna.UI.WinForms.GunaButton btnResetPassword;
         private Guna.UI.WinForms.GunaTextBox txtUsername;
         private Guna.UI.WinForms.GunaLabel gunaLabel10;
+        private Guna.UI.WinForms.GunaPanel PanelButtonNV;
+        private Guna.UI.WinForms.GunaButton btnUpdateAnh;
+        private Guna.UI.WinForms.GunaButton btnResetPassword;
+        private Guna.UI.WinForms.GunaButton btnCapNhatNV;
+        private Guna.UI.WinForms.GunaButton btnChangeStatus;
+        private Guna.UI.WinForms.GunaButton btnRenewNV;
+        private Guna.UI.WinForms.GunaButton btnThemNV;
+        private Guna.UI.WinForms.GunaButton btnXoaNV;
     }
 }
 
