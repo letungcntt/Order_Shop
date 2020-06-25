@@ -93,7 +93,6 @@ create table [Order]
 	foreign key (WH_id) references Warehouses(WH_id),
 	foreign key (Account_id) references Account(Account_id),
 )
-select * from [Order]
 create table Receipt
 (
 	Receipt_id int identity primary key,
@@ -105,6 +104,7 @@ create table Receipt
 )
 create table Receipt_Detail
 (
+	Receipt_Detail_id int identity primary key,
 	Receipt_id int,
 	Pro_id int,
 	Quantity int,
