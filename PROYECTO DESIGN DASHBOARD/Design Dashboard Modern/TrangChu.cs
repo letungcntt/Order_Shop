@@ -15,11 +15,21 @@ namespace Design_Dashboard_Modern
 {
     public partial class TrangChu : Form
     {
+        int idAccountLogin = 0;
         public TrangChu()
         {
             InitializeComponent();
-
-
+        }
+        public TrangChu(int idAccount)
+        {
+            InitializeComponent();
+            this.idAccountLogin = idAccount;
+        }
+        int LayQuyen()
+        {
+            QuanLyBanHang_DoAnEntities db = new QuanLyBanHang_DoAnEntities();
+            Account acc = db.Accounts.FirstOrDefault(x => x.Account_id == idAccountLogin);
+            return Convert.ToInt32(acc.Pos_id);
         }
         void LoadDataNhanVien()
         {
@@ -57,10 +67,6 @@ namespace Design_Dashboard_Modern
             cmbTimKiemNV.Items.Add("Email");
             cmbTimKiemNV.SelectedItem = "Mã NV";
             txtIDNV.Enabled = false;
-        }
-        void LoadDataBanHang()
-        {
-
         }
         void LoadDataKhachHang()
         {
@@ -166,32 +172,61 @@ namespace Design_Dashboard_Modern
 
         private void btnBanHang_Click(object sender, EventArgs e)
         {
-            SidePanel.Height = btnBanHang.Height;
-            SidePanel.Top = btnBanHang.Top + 25;
-            /*Panelbanhang.BringToFront();
-            LoadDataBanHang();*/
+            int Pos_id = LayQuyen();
+            if (Pos_id == 3)
+            {
+                MessageBox.Show("Bạn không có quyền hiển thị bán hàng!");
+            }
+            else
+            {
+                SidePanel.Height = btnBanHang.Height;
+                SidePanel.Top = btnBanHang.Top + 25;
+                /*Panelbanhang.BringToFront();
+                LoadDataBanHang();*/
+            }
+
         }
 
         private void btnXuatKho_Click(object sender, EventArgs e)
         {
-            SidePanel.Height = btnXuatKho.Height;
-            SidePanel.Top = btnXuatKho.Top + 25;
+            int Pos_id = LayQuyen();
+            if (Pos_id == 1)
+            {
+                MessageBox.Show("Bạn Không có quyền!");
+            }
+            else
+            {
+                SidePanel.Height = btnXuatKho.Height;
+                SidePanel.Top = btnXuatKho.Top + 25;
+            }
+
         }
 
         private void btnKhachHang_Click(object sender, EventArgs e)
         {
-            SidePanel.Height = btnKhachHang.Height;
-            SidePanel.Top = btnKhachHang.Top + 25;
-            PanelDSKhachHang.BringToFront();
-            LoadDataKhachHang();
+            int Pos_id = LayQuyen();
+            if (Pos_id == 1)
+            {
+                MessageBox.Show("Bạn Không có quyền!");
+            }
+            else
+            {
+                SidePanel.Height = btnKhachHang.Height;
+                SidePanel.Top = btnKhachHang.Top + 25;
+                PanelDSKhachHang.BringToFront();
+                LoadDataKhachHang();
+            }
         }
-
         private void btnNhanVien_Click(object sender, EventArgs e)
         {
             SidePanel.Height = btnNhanVien.Height;
             SidePanel.Top = btnNhanVien.Top + 25;
             PanelGiaoDienNV.BringToFront();
             LoadDataNhanVien();
+            if (LayQuyen() == 1 || LayQuyen() == 2)
+            {
+                PanelButtonNV.Enabled = false;
+            }
         }
 
         private void btnThongke_Click(object sender, EventArgs e)
@@ -368,7 +403,7 @@ namespace Design_Dashboard_Modern
                 DateTime DOBNV = DateDOBNV.Value;
                 string UsernameNV = txtUsername.Text;
                 int Pos_id = Convert.ToInt32(cmbPosition.SelectedValue.ToString());
-                if (FullNameNV.Length == 0 || SDTNV.Length == 0 || DiaChiNV.Length == 0 || EmailNV.Length == 0 || UsernameNV.Length == 0 || Pos_id <0)
+                if (FullNameNV.Length == 0 || SDTNV.Length == 0 || DiaChiNV.Length == 0 || EmailNV.Length == 0 || UsernameNV.Length == 0 || Pos_id < 0)
                 {
                     MessageBox.Show("Vui lòng điền đầy đủ các trường thông tin!");
                 }
@@ -563,6 +598,14 @@ namespace Design_Dashboard_Modern
             txtUsername.Text = lg.Username.ToString();
             BoxAvatar.Image = Image.FromFile(Directory.GetCurrentDirectory() + "\\Data\\" + img);
             BoxAvatar.SizeMode = PictureBoxSizeMode.StretchImage;
+            if (idAccount == idAccountLogin)
+            {
+                PanelButtonNV.Enabled = true;
+            }
+            else
+            {
+                PanelButtonNV.Enabled = false;
+            }
         }
 
         private void btnRenewNV_Click(object sender, EventArgs e)
@@ -669,6 +712,11 @@ namespace Design_Dashboard_Modern
                     MessageBox.Show("Có Lỗi xảy ra trong quá trình Upload Ảnh!");
                 }
             }
+        }
+
+        private void txtTimKiemNV_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

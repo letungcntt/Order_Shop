@@ -19,11 +19,6 @@ namespace Design_Dashboard_Modern
             InitializeComponent();
         }
 
-        private void gunaLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void panelRegister_Paint(object sender, PaintEventArgs e)
         {
 
@@ -32,7 +27,7 @@ namespace Design_Dashboard_Modern
         private void btnChangeViewRegis_Click_1(object sender, EventArgs e)
         {
             panelRegister.BringToFront();
-            gunaTransition1.Show(panelRegister);
+            HieuUng.Show(panelRegister);
             PanelDangNhap.Hide();
         }
 
@@ -49,42 +44,9 @@ namespace Design_Dashboard_Modern
         private void btnChangeViewLogin_Click(object sender, EventArgs e)
         {
             PanelDangNhap.BringToFront();
-            gunaTransition1.Show(PanelDangNhap);
+            HieuUng.Show(PanelDangNhap);
         }
 
-        private void gunaGradientButton3_Click(object sender, EventArgs e)
-        {
-            string username = txtDangKyUsername.Text;
-            string password = getMd5Hash(txtDangKyPassword.Text);
-            string repassword = getMd5Hash(txtDangKyRePassword.Text);
-            string fullname = txtFullname.Text;
-            string address = txtAddress.Text;
-            string phone = txtSDT.Text;
-            if (password.Equals(repassword))
-            {
-                QuanLyBanHang_DoAnEntities db = new QuanLyBanHang_DoAnEntities();
-                Login newLogin = new Login();
-                newLogin.Username = username;
-                newLogin.Password = password;
-                db.Logins.Add(newLogin);
-                db.SaveChanges();
-                Login login = db.Logins.FirstOrDefault(x => x.Username == username);
-                Account newAcc = new Account();
-                newAcc.Account_id = login.Account_id;
-                newAcc.Account_name = fullname;
-                newAcc.Account_address = address;
-                newAcc.Account_phone = phone;
-                newAcc.Account_status = true;
-                db.Accounts.Add(newAcc);
-                db.SaveChanges();
-                txtThongBao.Text = "Đăng ký thành công!";
-            }
-            else
-            {
-                txtThongBao.Text = "Mật khẩu không khớp nhau!";
-            }
-
-        }
         static string getMd5Hash(string input)
         { // Create a new instance of the MD5CryptoServiceProvider object.
             MD5 md5Hasher = MD5.Create(); // Convert the input string to a byte array and compute the hash.
@@ -128,7 +90,7 @@ namespace Design_Dashboard_Modern
                     if (checkStatus == true)
                     {
                         this.Hide();
-                        TrangChu tc = new TrangChu();
+                        TrangChu tc = new TrangChu(idAccount);
                         tc.ShowDialog();
                     }
                     else
@@ -141,6 +103,45 @@ namespace Design_Dashboard_Modern
                 {
                     txtThongBao.Text = "Đăng nhập thất bại!";
                 }
+            }
+        }
+
+        private void btnDangKy_Click(object sender, EventArgs e)
+        {
+            string username = txtDangKyUsername.Text;
+            string password = getMd5Hash(txtDangKyPassword.Text);
+            string repassword = getMd5Hash(txtDangKyRePassword.Text);
+            string fullname = txtFullname.Text;
+            string address = txtAddress.Text;
+            string phone = txtSDT.Text;
+            string email = txtEmailRes.Text;
+            DateTime DOB = DOBRes.Value;
+            if (password.Equals(repassword))
+            {
+                QuanLyBanHang_DoAnEntities db = new QuanLyBanHang_DoAnEntities();
+                Login newLogin = new Login();
+                newLogin.Username = username;
+                newLogin.Password = password;
+                db.Logins.Add(newLogin);
+                db.SaveChanges();
+                Login login = db.Logins.FirstOrDefault(x => x.Username == username);
+                Account newAcc = new Account();
+                newAcc.Account_id = login.Account_id;
+                newAcc.Account_name = fullname;
+                newAcc.Account_address = address;
+                newAcc.Account_phone = phone;
+                newAcc.Account_DOB = DOB;
+                newAcc.Account_Email = email;
+                newAcc.Pos_id = 1;
+                newAcc.Account_status = true;
+                newAcc.Account_avatar = "default-avatar.jpg";
+                db.Accounts.Add(newAcc);
+                db.SaveChanges();
+                txtThongBao.Text = "Đăng ký thành công!";
+            }
+            else
+            {
+                txtThongBao.Text = "Mật khẩu không khớp nhau!";
             }
         }
     }
