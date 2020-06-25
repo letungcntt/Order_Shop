@@ -48,6 +48,7 @@ create table Products
 	Cate_id int,
 	Pro_Price float,
 	Provider_id int,
+	Pro_quantity int,
 	foreign key (Cate_id) references Category(Cate_id),
 	foreign key (Provider_id) references [Provider](Provider_id),
 )
@@ -105,7 +106,7 @@ create table Receipt
 create table Receipt_Detail
 (
 	Receipt_id int,
-	Pro_id int primary key,
+	Pro_id int,
 	Quantity int,
 	Pro_Price float,
 	Sum_Price float,
@@ -135,7 +136,7 @@ insert Position values (N'Bán Hàng')
 insert Position values (N'Quản Lý')
 insert Account values (1,N'Đinh Doãn Việt',1,N'Hà Nội','0965062715','1999-01-02','doanvietcntt99@gmail.com',1)
 
-insert into Warehouses values ('wh1', 'Kho V1' , '225 - Quan Hoa - Cau Giay - Ha Noi', '0824744871')
+insert into Warehouses values ('Kho V1' , '225 - Quan Hoa - Cau Giay - Ha Noi', '0824744871')
 insert into Account values ('2', 'Le Tung', 2, 'Ha Noi' , '0824744871', '11/27/1999', 'lonthong79@gmail.com', 'True')
 insert into Customers values ('KH1', 'Tung', '0824744871', '225-QuanHoa', 'letungcntt@gmail.com', '100', '4', '11/27/1999')
 
@@ -145,8 +146,13 @@ insert into Category values ('VinMart')
 insert into Provider values ('DHD', '235-Hoang Quoc Viet', '0824744871')
 insert into Provider values ('DHT', '234-Hoang Quoc Viet', '0824544871')
 
-insert into Products values ('Banh my', 'Banh my sieu to khong lo', '1', '1' , '20000')
-insert into Products values ('Banh bao', 'Banh bao sieu to khong lo', '1', '2' , '20000')
-insert into Products values ('Banh chuoi', '', '0', '1' , '20000')
+insert into Products values ('Banh my', 'Banh my sieu to khong lo', '1', '1' , '20000','1','5')
+insert into Products values ('Banh bao', 'Banh bao sieu to khong lo', '1', '2' , '20000','1','5')
+insert into Products values ('Banh chuoi', '', '0', '1' , '20000','1','5')
+insert into Category values (N'Laptop')
+insert into Category values (N'CPU')
+insert into Category values (N'Mouse')
+insert into Category values (N'Keyboard')
+insert into Category values (N'USB')
+insert into [Provider] values (N'Hanoi Computer','Ha Noi','0965062715')
 
-insert into Receipt_Detail values ('')
