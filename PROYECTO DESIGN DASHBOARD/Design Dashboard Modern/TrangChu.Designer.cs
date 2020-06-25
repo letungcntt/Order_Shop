@@ -29,16 +29,22 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrangChu));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
-            Guna.UI.Animation.Animation animation3 = new Guna.UI.Animation.Animation();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            BunifuAnimatorNS.Animation animation6 = new BunifuAnimatorNS.Animation();
+            Guna.UI.Animation.Animation animation5 = new Guna.UI.Animation.Animation();
             this.SidebarWrapper = new System.Windows.Forms.Panel();
             this.SidePanel = new System.Windows.Forms.Panel();
             this.Sidebar = new Bunifu.Framework.UI.BunifuGradientPanel();
@@ -56,7 +62,41 @@
             this.CurvaSidebar = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.AnimacionSidebar = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.Wrapper = new System.Windows.Forms.Panel();
+            this.BanHang = new Guna.UI.WinForms.GunaPanel();
+            this.txtQuantity = new Guna.UI.WinForms.GunaTextBox();
+            this.Pro_Price = new Guna.UI.WinForms.GunaTextBox();
+            this.txtNamePro = new Guna.UI.WinForms.GunaTextBox();
+            this.txtSPOrder = new Guna.UI.WinForms.GunaTextBox();
+            this.gunaLabel12 = new Guna.UI.WinForms.GunaLabel();
+            this.txtDiaChiVl = new Guna.UI.WinForms.GunaTextBox();
+            this.txtNoteOrder = new System.Windows.Forms.RichTextBox();
+            this.gunaLabel11 = new Guna.UI.WinForms.GunaLabel();
+            this.dtThoiGianVL = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.txtsdtVL = new Guna.UI.WinForms.GunaTextBox();
+            this.txtTenVL = new Guna.UI.WinForms.GunaTextBox();
+            this.btnSearch = new Guna.UI.WinForms.GunaButton();
+            this.dgvOrder = new Guna.UI.WinForms.GunaDataGridView();
+            this.gunaLabel21 = new Guna.UI.WinForms.GunaLabel();
+            this.dgvProductOrder = new Guna.UI.WinForms.GunaDataGridView();
+            this.gunaLabel17 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel18 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel19 = new Guna.UI.WinForms.GunaLabel();
+            this.bunifuTextbox1 = new Bunifu.Framework.UI.BunifuTextbox();
+            this.btnUpdateOrder = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnRemovePro = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuFlatButton6 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnAddOrder = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.PanelGiaoDienNV = new Guna.UI.WinForms.GunaPanel();
+            this.PanelButtonNV = new Guna.UI.WinForms.GunaPanel();
+            this.btnUpdateAnh = new Guna.UI.WinForms.GunaButton();
+            this.btnResetPassword = new Guna.UI.WinForms.GunaButton();
+            this.btnCapNhatNV = new Guna.UI.WinForms.GunaButton();
+            this.btnChangeStatus = new Guna.UI.WinForms.GunaButton();
+            this.btnRenewNV = new Guna.UI.WinForms.GunaButton();
+            this.btnThemNV = new Guna.UI.WinForms.GunaButton();
+            this.btnXoaNV = new Guna.UI.WinForms.GunaButton();
             this.cmbPosition = new Guna.UI.WinForms.GunaComboBox();
             this.lbPosition = new Guna.UI.WinForms.GunaLabel();
             this.BoxAvatar = new System.Windows.Forms.PictureBox();
@@ -113,19 +153,20 @@
             this.Temporizador = new System.Windows.Forms.Timer(this.components);
             this.MoverDashboard = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.gunaTransition1 = new Guna.UI.WinForms.GunaTransition(this.components);
-            this.btnThemNV = new Guna.UI.WinForms.GunaButton();
-            this.btnCapNhatNV = new Guna.UI.WinForms.GunaButton();
-            this.btnXoaNV = new Guna.UI.WinForms.GunaButton();
-            this.btnRenewNV = new Guna.UI.WinForms.GunaButton();
-            this.btnResetPassword = new Guna.UI.WinForms.GunaButton();
-            this.btnChangeStatus = new Guna.UI.WinForms.GunaButton();
-            this.btnUpdateAnh = new Guna.UI.WinForms.GunaButton();
-            this.PanelButtonNV = new Guna.UI.WinForms.GunaPanel();
+            this.lbTongTIen = new Guna.UI.WinForms.GunaLabel();
+            this.txtOrder_TimSDTKH = new Bunifu.Framework.UI.BunifuTextbox();
+            this.btnTimKiemKHOrder = new Guna.UI.WinForms.GunaButton();
+            this.lbGiamGia = new Guna.UI.WinForms.GunaLabel();
+            this.lbThanhToanTien = new Guna.UI.WinForms.GunaLabel();
             this.SidebarWrapper.SuspendLayout();
             this.Sidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Wrapper.SuspendLayout();
+            this.BanHang.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvOrder)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProductOrder)).BeginInit();
             this.PanelGiaoDienNV.SuspendLayout();
+            this.PanelButtonNV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BoxAvatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAccount)).BeginInit();
             this.PanelDSKhachHang.SuspendLayout();
@@ -136,7 +177,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Restaurar)).BeginInit();
             this.MenuTop.SuspendLayout();
-            this.PanelButtonNV.SuspendLayout();
             this.SuspendLayout();
             // 
             // SidebarWrapper
@@ -560,22 +600,22 @@
             // 
             this.AnimacionSidebar.AnimationType = BunifuAnimatorNS.AnimationType.Particles;
             this.AnimacionSidebar.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 1;
-            animation1.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 2F;
-            animation1.TransparencyCoeff = 0F;
-            this.AnimacionSidebar.DefaultAnimation = animation1;
+            animation4.AnimateOnlyDifferences = true;
+            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+            animation4.LeafCoeff = 0F;
+            animation4.MaxTime = 1F;
+            animation4.MinTime = 0F;
+            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+            animation4.MosaicSize = 1;
+            animation4.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
+            animation4.RotateCoeff = 0F;
+            animation4.RotateLimit = 0F;
+            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+            animation4.TimeCoeff = 2F;
+            animation4.TransparencyCoeff = 0F;
+            this.AnimacionSidebar.DefaultAnimation = animation4;
             // 
             // Wrapper
             // 
@@ -583,6 +623,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Wrapper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.Wrapper.Controls.Add(this.BanHang);
             this.Wrapper.Controls.Add(this.PanelGiaoDienNV);
             this.Wrapper.Controls.Add(this.PanelDSKhachHang);
             this.AnimacionSidebar.SetDecoration(this.Wrapper, BunifuAnimatorNS.DecorationType.None);
@@ -592,6 +633,728 @@
             this.Wrapper.Name = "Wrapper";
             this.Wrapper.Size = new System.Drawing.Size(878, 732);
             this.Wrapper.TabIndex = 2;
+            // 
+            // BanHang
+            // 
+            this.BanHang.Controls.Add(this.txtQuantity);
+            this.BanHang.Controls.Add(this.Pro_Price);
+            this.BanHang.Controls.Add(this.txtNamePro);
+            this.BanHang.Controls.Add(this.txtSPOrder);
+            this.BanHang.Controls.Add(this.gunaLabel12);
+            this.BanHang.Controls.Add(this.txtDiaChiVl);
+            this.BanHang.Controls.Add(this.txtNoteOrder);
+            this.BanHang.Controls.Add(this.gunaLabel11);
+            this.BanHang.Controls.Add(this.dtThoiGianVL);
+            this.BanHang.Controls.Add(this.txtsdtVL);
+            this.BanHang.Controls.Add(this.txtTenVL);
+            this.BanHang.Controls.Add(this.btnTimKiemKHOrder);
+            this.BanHang.Controls.Add(this.btnSearch);
+            this.BanHang.Controls.Add(this.dgvOrder);
+            this.BanHang.Controls.Add(this.gunaLabel21);
+            this.BanHang.Controls.Add(this.dgvProductOrder);
+            this.BanHang.Controls.Add(this.gunaLabel17);
+            this.BanHang.Controls.Add(this.gunaLabel18);
+            this.BanHang.Controls.Add(this.lbThanhToanTien);
+            this.BanHang.Controls.Add(this.lbGiamGia);
+            this.BanHang.Controls.Add(this.lbTongTIen);
+            this.BanHang.Controls.Add(this.gunaLabel19);
+            this.BanHang.Controls.Add(this.txtOrder_TimSDTKH);
+            this.BanHang.Controls.Add(this.bunifuTextbox1);
+            this.BanHang.Controls.Add(this.btnUpdateOrder);
+            this.BanHang.Controls.Add(this.btnRemovePro);
+            this.BanHang.Controls.Add(this.bunifuFlatButton2);
+            this.BanHang.Controls.Add(this.bunifuFlatButton6);
+            this.BanHang.Controls.Add(this.btnAddOrder);
+            this.BanHang.Controls.Add(this.bunifuFlatButton3);
+            this.AnimacionSidebar.SetDecoration(this.BanHang, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.BanHang, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.BanHang, Guna.UI.Animation.DecorationType.None);
+            this.BanHang.Location = new System.Drawing.Point(9, 14);
+            this.BanHang.Name = "BanHang";
+            this.BanHang.Size = new System.Drawing.Size(864, 697);
+            this.BanHang.TabIndex = 78;
+            // 
+            // txtQuantity
+            // 
+            this.txtQuantity.BackColor = System.Drawing.Color.Transparent;
+            this.txtQuantity.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(41)))), ((int)(((byte)(86)))));
+            this.txtQuantity.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(50)))), ((int)(((byte)(101)))));
+            this.txtQuantity.BorderSize = 1;
+            this.txtQuantity.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.AnimacionSidebarBack.SetDecoration(this.txtQuantity, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.txtQuantity, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.txtQuantity, Guna.UI.Animation.DecorationType.None);
+            this.txtQuantity.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtQuantity.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtQuantity.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtQuantity.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtQuantity.ForeColor = System.Drawing.Color.White;
+            this.txtQuantity.Location = new System.Drawing.Point(486, 178);
+            this.txtQuantity.Name = "txtQuantity";
+            this.txtQuantity.PasswordChar = '\0';
+            this.txtQuantity.SelectedText = "";
+            this.txtQuantity.Size = new System.Drawing.Size(233, 31);
+            this.txtQuantity.TabIndex = 101;
+            this.txtQuantity.Text = "Số Lượng";
+            // 
+            // Pro_Price
+            // 
+            this.Pro_Price.BackColor = System.Drawing.Color.Transparent;
+            this.Pro_Price.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(41)))), ((int)(((byte)(86)))));
+            this.Pro_Price.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(50)))), ((int)(((byte)(101)))));
+            this.Pro_Price.BorderSize = 1;
+            this.Pro_Price.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.AnimacionSidebarBack.SetDecoration(this.Pro_Price, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.Pro_Price, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.Pro_Price, Guna.UI.Animation.DecorationType.None);
+            this.Pro_Price.FocusedBaseColor = System.Drawing.Color.White;
+            this.Pro_Price.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Pro_Price.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.Pro_Price.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Pro_Price.ForeColor = System.Drawing.Color.White;
+            this.Pro_Price.Location = new System.Drawing.Point(486, 125);
+            this.Pro_Price.Name = "Pro_Price";
+            this.Pro_Price.PasswordChar = '\0';
+            this.Pro_Price.SelectedText = "";
+            this.Pro_Price.Size = new System.Drawing.Size(233, 31);
+            this.Pro_Price.TabIndex = 100;
+            this.Pro_Price.Text = "Đơn Giá";
+            // 
+            // txtNamePro
+            // 
+            this.txtNamePro.BackColor = System.Drawing.Color.Transparent;
+            this.txtNamePro.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(41)))), ((int)(((byte)(86)))));
+            this.txtNamePro.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(50)))), ((int)(((byte)(101)))));
+            this.txtNamePro.BorderSize = 1;
+            this.txtNamePro.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.AnimacionSidebarBack.SetDecoration(this.txtNamePro, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.txtNamePro, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.txtNamePro, Guna.UI.Animation.DecorationType.None);
+            this.txtNamePro.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtNamePro.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtNamePro.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtNamePro.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNamePro.ForeColor = System.Drawing.Color.White;
+            this.txtNamePro.Location = new System.Drawing.Point(485, 78);
+            this.txtNamePro.Name = "txtNamePro";
+            this.txtNamePro.PasswordChar = '\0';
+            this.txtNamePro.SelectedText = "";
+            this.txtNamePro.Size = new System.Drawing.Size(233, 31);
+            this.txtNamePro.TabIndex = 99;
+            this.txtNamePro.Text = "Tên Sản Phẩm";
+            // 
+            // txtSPOrder
+            // 
+            this.txtSPOrder.BackColor = System.Drawing.Color.Transparent;
+            this.txtSPOrder.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(41)))), ((int)(((byte)(86)))));
+            this.txtSPOrder.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(50)))), ((int)(((byte)(101)))));
+            this.txtSPOrder.BorderSize = 1;
+            this.txtSPOrder.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.AnimacionSidebarBack.SetDecoration(this.txtSPOrder, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.txtSPOrder, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.txtSPOrder, Guna.UI.Animation.DecorationType.None);
+            this.txtSPOrder.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtSPOrder.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtSPOrder.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtSPOrder.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSPOrder.ForeColor = System.Drawing.Color.White;
+            this.txtSPOrder.Location = new System.Drawing.Point(486, 30);
+            this.txtSPOrder.Name = "txtSPOrder";
+            this.txtSPOrder.PasswordChar = '\0';
+            this.txtSPOrder.SelectedText = "";
+            this.txtSPOrder.Size = new System.Drawing.Size(233, 31);
+            this.txtSPOrder.TabIndex = 98;
+            this.txtSPOrder.Text = "ID Sản Phẩm";
+            // 
+            // gunaLabel12
+            // 
+            this.gunaLabel12.AutoSize = true;
+            this.gunaLabel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
+            this.AnimacionSidebar.SetDecoration(this.gunaLabel12, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.gunaLabel12, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.gunaLabel12, Guna.UI.Animation.DecorationType.None);
+            this.gunaLabel12.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.gunaLabel12.ForeColor = System.Drawing.Color.White;
+            this.gunaLabel12.Location = new System.Drawing.Point(637, 306);
+            this.gunaLabel12.Name = "gunaLabel12";
+            this.gunaLabel12.Size = new System.Drawing.Size(129, 30);
+            this.gunaLabel12.TabIndex = 97;
+            this.gunaLabel12.Text = "Khách Hàng";
+            this.gunaLabel12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtDiaChiVl
+            // 
+            this.txtDiaChiVl.BackColor = System.Drawing.Color.Transparent;
+            this.txtDiaChiVl.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(41)))), ((int)(((byte)(86)))));
+            this.txtDiaChiVl.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(50)))), ((int)(((byte)(101)))));
+            this.txtDiaChiVl.BorderSize = 1;
+            this.txtDiaChiVl.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.AnimacionSidebarBack.SetDecoration(this.txtDiaChiVl, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.txtDiaChiVl, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.txtDiaChiVl, Guna.UI.Animation.DecorationType.None);
+            this.txtDiaChiVl.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtDiaChiVl.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtDiaChiVl.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtDiaChiVl.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtDiaChiVl.ForeColor = System.Drawing.Color.White;
+            this.txtDiaChiVl.Location = new System.Drawing.Point(576, 482);
+            this.txtDiaChiVl.Name = "txtDiaChiVl";
+            this.txtDiaChiVl.PasswordChar = '\0';
+            this.txtDiaChiVl.SelectedText = "";
+            this.txtDiaChiVl.Size = new System.Drawing.Size(233, 32);
+            this.txtDiaChiVl.TabIndex = 96;
+            this.txtDiaChiVl.Text = "Địa chỉ";
+            // 
+            // txtNoteOrder
+            // 
+            this.txtNoteOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(41)))), ((int)(((byte)(86)))));
+            this.txtNoteOrder.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.AnimacionSidebar.SetDecoration(this.txtNoteOrder, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.txtNoteOrder, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.txtNoteOrder, Guna.UI.Animation.DecorationType.None);
+            this.txtNoteOrder.ForeColor = System.Drawing.Color.White;
+            this.txtNoteOrder.Location = new System.Drawing.Point(581, 566);
+            this.txtNoteOrder.Name = "txtNoteOrder";
+            this.txtNoteOrder.Size = new System.Drawing.Size(263, 92);
+            this.txtNoteOrder.TabIndex = 93;
+            this.txtNoteOrder.Text = "";
+            this.txtNoteOrder.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            // 
+            // gunaLabel11
+            // 
+            this.gunaLabel11.AutoSize = true;
+            this.AnimacionSidebar.SetDecoration(this.gunaLabel11, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.gunaLabel11, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.gunaLabel11, Guna.UI.Animation.DecorationType.None);
+            this.gunaLabel11.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.gunaLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
+            this.gunaLabel11.Location = new System.Drawing.Point(568, 539);
+            this.gunaLabel11.Name = "gunaLabel11";
+            this.gunaLabel11.Size = new System.Drawing.Size(65, 20);
+            this.gunaLabel11.TabIndex = 92;
+            this.gunaLabel11.Text = "Ghi chú: ";
+            this.gunaLabel11.Click += new System.EventHandler(this.gunaLabel11_Click);
+            // 
+            // dtThoiGianVL
+            // 
+            this.dtThoiGianVL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(41)))), ((int)(((byte)(86)))));
+            this.dtThoiGianVL.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(41)))), ((int)(((byte)(86)))));
+            this.dtThoiGianVL.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(41)))), ((int)(((byte)(86)))));
+            this.dtThoiGianVL.CustomFormat = null;
+            this.AnimacionSidebar.SetDecoration(this.dtThoiGianVL, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.dtThoiGianVL, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.dtThoiGianVL, Guna.UI.Animation.DecorationType.None);
+            this.dtThoiGianVL.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtThoiGianVL.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dtThoiGianVL.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtThoiGianVL.ForeColor = System.Drawing.Color.White;
+            this.dtThoiGianVL.Location = new System.Drawing.Point(576, 391);
+            this.dtThoiGianVL.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtThoiGianVL.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtThoiGianVL.Name = "dtThoiGianVL";
+            this.dtThoiGianVL.OnHoverBaseColor = System.Drawing.Color.White;
+            this.dtThoiGianVL.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dtThoiGianVL.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dtThoiGianVL.OnPressedColor = System.Drawing.Color.Black;
+            this.dtThoiGianVL.Size = new System.Drawing.Size(233, 30);
+            this.dtThoiGianVL.TabIndex = 89;
+            this.dtThoiGianVL.Text = "Tuesday, June 23, 2020";
+            this.dtThoiGianVL.Value = new System.DateTime(2020, 6, 23, 16, 14, 2, 277);
+            this.dtThoiGianVL.ValueChanged += new System.EventHandler(this.gunaDateTimePicker1_ValueChanged);
+            // 
+            // txtsdtVL
+            // 
+            this.txtsdtVL.BackColor = System.Drawing.Color.Transparent;
+            this.txtsdtVL.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(41)))), ((int)(((byte)(86)))));
+            this.txtsdtVL.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(50)))), ((int)(((byte)(101)))));
+            this.txtsdtVL.BorderSize = 1;
+            this.txtsdtVL.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.AnimacionSidebarBack.SetDecoration(this.txtsdtVL, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.txtsdtVL, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.txtsdtVL, Guna.UI.Animation.DecorationType.None);
+            this.txtsdtVL.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtsdtVL.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtsdtVL.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtsdtVL.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtsdtVL.ForeColor = System.Drawing.Color.White;
+            this.txtsdtVL.Location = new System.Drawing.Point(576, 430);
+            this.txtsdtVL.Name = "txtsdtVL";
+            this.txtsdtVL.PasswordChar = '\0';
+            this.txtsdtVL.SelectedText = "";
+            this.txtsdtVL.Size = new System.Drawing.Size(233, 32);
+            this.txtsdtVL.TabIndex = 88;
+            this.txtsdtVL.Text = "Số Điện Thoại";
+            this.txtsdtVL.TextChanged += new System.EventHandler(this.gunaTextBox1_TextChanged);
+            // 
+            // txtTenVL
+            // 
+            this.txtTenVL.BackColor = System.Drawing.Color.Transparent;
+            this.txtTenVL.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(41)))), ((int)(((byte)(86)))));
+            this.txtTenVL.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(50)))), ((int)(((byte)(101)))));
+            this.txtTenVL.BorderSize = 1;
+            this.txtTenVL.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.AnimacionSidebarBack.SetDecoration(this.txtTenVL, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.txtTenVL, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.txtTenVL, Guna.UI.Animation.DecorationType.None);
+            this.txtTenVL.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtTenVL.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtTenVL.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtTenVL.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTenVL.ForeColor = System.Drawing.Color.White;
+            this.txtTenVL.Location = new System.Drawing.Point(576, 348);
+            this.txtTenVL.Name = "txtTenVL";
+            this.txtTenVL.PasswordChar = '\0';
+            this.txtTenVL.SelectedText = "";
+            this.txtTenVL.Size = new System.Drawing.Size(233, 31);
+            this.txtTenVL.TabIndex = 87;
+            this.txtTenVL.Text = "Họ Và Tên";
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.AnimationHoverSpeed = 0.07F;
+            this.btnSearch.AnimationSpeed = 0.03F;
+            this.btnSearch.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnSearch.BorderColor = System.Drawing.Color.Black;
+            this.AnimacionSidebar.SetDecoration(this.btnSearch, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.btnSearch, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.btnSearch, Guna.UI.Animation.DecorationType.None);
+            this.btnSearch.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnSearch.FocusedColor = System.Drawing.Color.Empty;
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSearch.ForeColor = System.Drawing.Color.White;
+            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
+            this.btnSearch.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnSearch.Location = new System.Drawing.Point(335, 13);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnSearch.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnSearch.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnSearch.OnHoverImage = null;
+            this.btnSearch.OnPressedColor = System.Drawing.Color.Black;
+            this.btnSearch.Size = new System.Drawing.Size(98, 37);
+            this.btnSearch.TabIndex = 85;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // dgvOrder
+            // 
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            this.dgvOrder.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            this.dgvOrder.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvOrder.BackgroundColor = System.Drawing.Color.White;
+            this.dgvOrder.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvOrder.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvOrder.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvOrder.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            this.dgvOrder.ColumnHeadersHeight = 4;
+            this.AnimacionSidebar.SetDecoration(this.dgvOrder, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.dgvOrder, Guna.UI.Animation.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.dgvOrder, BunifuAnimatorNS.DecorationType.None);
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvOrder.DefaultCellStyle = dataGridViewCellStyle15;
+            this.dgvOrder.EnableHeadersVisualStyles = false;
+            this.dgvOrder.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvOrder.Location = new System.Drawing.Point(9, 263);
+            this.dgvOrder.Name = "dgvOrder";
+            this.dgvOrder.RowHeadersVisible = false;
+            this.dgvOrder.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvOrder.Size = new System.Drawing.Size(533, 251);
+            this.dgvOrder.TabIndex = 84;
+            this.dgvOrder.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
+            this.dgvOrder.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvOrder.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgvOrder.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgvOrder.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgvOrder.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgvOrder.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgvOrder.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvOrder.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dgvOrder.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvOrder.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgvOrder.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvOrder.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvOrder.ThemeStyle.HeaderStyle.Height = 4;
+            this.dgvOrder.ThemeStyle.ReadOnly = false;
+            this.dgvOrder.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvOrder.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvOrder.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgvOrder.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvOrder.ThemeStyle.RowsStyle.Height = 22;
+            this.dgvOrder.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvOrder.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // gunaLabel21
+            // 
+            this.gunaLabel21.AutoSize = true;
+            this.gunaLabel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
+            this.AnimacionSidebar.SetDecoration(this.gunaLabel21, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.gunaLabel21, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.gunaLabel21, Guna.UI.Animation.DecorationType.None);
+            this.gunaLabel21.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.gunaLabel21.ForeColor = System.Drawing.Color.White;
+            this.gunaLabel21.Location = new System.Drawing.Point(128, 225);
+            this.gunaLabel21.Name = "gunaLabel21";
+            this.gunaLabel21.Size = new System.Drawing.Size(298, 30);
+            this.gunaLabel21.TabIndex = 83;
+            this.gunaLabel21.Text = "Danh Sách Sản Phẩm đã chọn";
+            this.gunaLabel21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dgvProductOrder
+            // 
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            this.dgvProductOrder.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            this.dgvProductOrder.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvProductOrder.BackgroundColor = System.Drawing.Color.White;
+            this.dgvProductOrder.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvProductOrder.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvProductOrder.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProductOrder.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            this.dgvProductOrder.ColumnHeadersHeight = 4;
+            this.AnimacionSidebar.SetDecoration(this.dgvProductOrder, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.dgvProductOrder, Guna.UI.Animation.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.dgvProductOrder, BunifuAnimatorNS.DecorationType.None);
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvProductOrder.DefaultCellStyle = dataGridViewCellStyle18;
+            this.dgvProductOrder.EnableHeadersVisualStyles = false;
+            this.dgvProductOrder.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvProductOrder.Location = new System.Drawing.Point(14, 63);
+            this.dgvProductOrder.Name = "dgvProductOrder";
+            this.dgvProductOrder.RowHeadersVisible = false;
+            this.dgvProductOrder.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvProductOrder.Size = new System.Drawing.Size(419, 151);
+            this.dgvProductOrder.TabIndex = 82;
+            this.dgvProductOrder.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
+            this.dgvProductOrder.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvProductOrder.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgvProductOrder.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgvProductOrder.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgvProductOrder.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgvProductOrder.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgvProductOrder.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvProductOrder.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dgvProductOrder.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvProductOrder.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgvProductOrder.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvProductOrder.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvProductOrder.ThemeStyle.HeaderStyle.Height = 4;
+            this.dgvProductOrder.ThemeStyle.ReadOnly = false;
+            this.dgvProductOrder.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvProductOrder.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvProductOrder.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgvProductOrder.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvProductOrder.ThemeStyle.RowsStyle.Height = 22;
+            this.dgvProductOrder.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvProductOrder.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvProductOrder.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProductOrder_CellClick);
+            // 
+            // gunaLabel17
+            // 
+            this.gunaLabel17.AutoSize = true;
+            this.AnimacionSidebar.SetDecoration(this.gunaLabel17, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.gunaLabel17, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.gunaLabel17, Guna.UI.Animation.DecorationType.None);
+            this.gunaLabel17.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.gunaLabel17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
+            this.gunaLabel17.Location = new System.Drawing.Point(21, 560);
+            this.gunaLabel17.Name = "gunaLabel17";
+            this.gunaLabel17.Size = new System.Drawing.Size(76, 20);
+            this.gunaLabel17.TabIndex = 69;
+            this.gunaLabel17.Text = "Giảm giá: ";
+            // 
+            // gunaLabel18
+            // 
+            this.gunaLabel18.AutoSize = true;
+            this.AnimacionSidebar.SetDecoration(this.gunaLabel18, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.gunaLabel18, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.gunaLabel18, Guna.UI.Animation.DecorationType.None);
+            this.gunaLabel18.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.gunaLabel18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
+            this.gunaLabel18.Location = new System.Drawing.Point(21, 589);
+            this.gunaLabel18.Name = "gunaLabel18";
+            this.gunaLabel18.Size = new System.Drawing.Size(92, 20);
+            this.gunaLabel18.TabIndex = 68;
+            this.gunaLabel18.Text = "Thanh Toán: ";
+            // 
+            // gunaLabel19
+            // 
+            this.gunaLabel19.AutoSize = true;
+            this.AnimacionSidebar.SetDecoration(this.gunaLabel19, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.gunaLabel19, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.gunaLabel19, Guna.UI.Animation.DecorationType.None);
+            this.gunaLabel19.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.gunaLabel19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
+            this.gunaLabel19.Location = new System.Drawing.Point(21, 528);
+            this.gunaLabel19.Name = "gunaLabel19";
+            this.gunaLabel19.Size = new System.Drawing.Size(79, 20);
+            this.gunaLabel19.TabIndex = 66;
+            this.gunaLabel19.Text = "Tổng tiền: ";
+            // 
+            // bunifuTextbox1
+            // 
+            this.bunifuTextbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
+            this.bunifuTextbox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.BackgroundImage")));
+            this.bunifuTextbox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.AnimacionSidebar.SetDecoration(this.bunifuTextbox1, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.bunifuTextbox1, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.bunifuTextbox1, Guna.UI.Animation.DecorationType.None);
+            this.bunifuTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.bunifuTextbox1.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.Icon")));
+            this.bunifuTextbox1.Location = new System.Drawing.Point(17, 9);
+            this.bunifuTextbox1.Name = "bunifuTextbox1";
+            this.bunifuTextbox1.Size = new System.Drawing.Size(292, 42);
+            this.bunifuTextbox1.TabIndex = 64;
+            this.bunifuTextbox1.text = "Tìm kiếm";
+            // 
+            // btnUpdateOrder
+            // 
+            this.btnUpdateOrder.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(34)))), ((int)(((byte)(45)))));
+            this.btnUpdateOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(196)))), ((int)(((byte)(26)))));
+            this.btnUpdateOrder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnUpdateOrder.BorderRadius = 0;
+            this.btnUpdateOrder.ButtonText = "Sửa";
+            this.btnUpdateOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaTransition1.SetDecoration(this.btnUpdateOrder, Guna.UI.Animation.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.btnUpdateOrder, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.btnUpdateOrder, BunifuAnimatorNS.DecorationType.None);
+            this.btnUpdateOrder.DisabledColor = System.Drawing.Color.Gray;
+            this.btnUpdateOrder.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnUpdateOrder.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnUpdateOrder.Iconimage")));
+            this.btnUpdateOrder.Iconimage_right = null;
+            this.btnUpdateOrder.Iconimage_right_Selected = null;
+            this.btnUpdateOrder.Iconimage_Selected = null;
+            this.btnUpdateOrder.IconMarginLeft = 0;
+            this.btnUpdateOrder.IconMarginRight = 0;
+            this.btnUpdateOrder.IconRightVisible = true;
+            this.btnUpdateOrder.IconRightZoom = 0D;
+            this.btnUpdateOrder.IconVisible = false;
+            this.btnUpdateOrder.IconZoom = 90D;
+            this.btnUpdateOrder.IsTab = false;
+            this.btnUpdateOrder.Location = new System.Drawing.Point(756, 106);
+            this.btnUpdateOrder.Name = "btnUpdateOrder";
+            this.btnUpdateOrder.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(196)))), ((int)(((byte)(26)))));
+            this.btnUpdateOrder.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(196)))), ((int)(((byte)(26)))));
+            this.btnUpdateOrder.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnUpdateOrder.selected = false;
+            this.btnUpdateOrder.Size = new System.Drawing.Size(100, 30);
+            this.btnUpdateOrder.TabIndex = 63;
+            this.btnUpdateOrder.Text = "Sửa";
+            this.btnUpdateOrder.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnUpdateOrder.Textcolor = System.Drawing.Color.White;
+            this.btnUpdateOrder.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // btnRemovePro
+            // 
+            this.btnRemovePro.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(34)))), ((int)(((byte)(45)))));
+            this.btnRemovePro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(34)))), ((int)(((byte)(45)))));
+            this.btnRemovePro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRemovePro.BorderRadius = 0;
+            this.btnRemovePro.ButtonText = "Xóa";
+            this.btnRemovePro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaTransition1.SetDecoration(this.btnRemovePro, Guna.UI.Animation.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.btnRemovePro, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.btnRemovePro, BunifuAnimatorNS.DecorationType.None);
+            this.btnRemovePro.DisabledColor = System.Drawing.Color.Gray;
+            this.btnRemovePro.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnRemovePro.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnRemovePro.Iconimage")));
+            this.btnRemovePro.Iconimage_right = null;
+            this.btnRemovePro.Iconimage_right_Selected = null;
+            this.btnRemovePro.Iconimage_Selected = null;
+            this.btnRemovePro.IconMarginLeft = 0;
+            this.btnRemovePro.IconMarginRight = 0;
+            this.btnRemovePro.IconRightVisible = true;
+            this.btnRemovePro.IconRightZoom = 0D;
+            this.btnRemovePro.IconVisible = false;
+            this.btnRemovePro.IconZoom = 90D;
+            this.btnRemovePro.IsTab = false;
+            this.btnRemovePro.Location = new System.Drawing.Point(757, 179);
+            this.btnRemovePro.Name = "btnRemovePro";
+            this.btnRemovePro.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(34)))), ((int)(((byte)(45)))));
+            this.btnRemovePro.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(34)))), ((int)(((byte)(45)))));
+            this.btnRemovePro.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnRemovePro.selected = false;
+            this.btnRemovePro.Size = new System.Drawing.Size(100, 30);
+            this.btnRemovePro.TabIndex = 63;
+            this.btnRemovePro.Text = "Xóa";
+            this.btnRemovePro.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnRemovePro.Textcolor = System.Drawing.Color.White;
+            this.btnRemovePro.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // bunifuFlatButton2
+            // 
+            this.bunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(34)))), ((int)(((byte)(45)))));
+            this.bunifuFlatButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(34)))), ((int)(((byte)(45)))));
+            this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton2.BorderRadius = 0;
+            this.bunifuFlatButton2.ButtonText = "Hủy bỏ";
+            this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaTransition1.SetDecoration(this.bunifuFlatButton2, Guna.UI.Animation.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.bunifuFlatButton2, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.bunifuFlatButton2, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton2.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton2.Iconimage")));
+            this.bunifuFlatButton2.Iconimage_right = null;
+            this.bunifuFlatButton2.Iconimage_right_Selected = null;
+            this.bunifuFlatButton2.Iconimage_Selected = null;
+            this.bunifuFlatButton2.IconMarginLeft = 0;
+            this.bunifuFlatButton2.IconMarginRight = 0;
+            this.bunifuFlatButton2.IconRightVisible = true;
+            this.bunifuFlatButton2.IconRightZoom = 0D;
+            this.bunifuFlatButton2.IconVisible = false;
+            this.bunifuFlatButton2.IconZoom = 90D;
+            this.bunifuFlatButton2.IsTab = false;
+            this.bunifuFlatButton2.Location = new System.Drawing.Point(343, 644);
+            this.bunifuFlatButton2.Name = "bunifuFlatButton2";
+            this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(34)))), ((int)(((byte)(45)))));
+            this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(34)))), ((int)(((byte)(45)))));
+            this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton2.selected = false;
+            this.bunifuFlatButton2.Size = new System.Drawing.Size(100, 30);
+            this.bunifuFlatButton2.TabIndex = 63;
+            this.bunifuFlatButton2.Text = "Hủy bỏ";
+            this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // bunifuFlatButton6
+            // 
+            this.bunifuFlatButton6.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(144)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(144)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton6.BorderRadius = 0;
+            this.bunifuFlatButton6.ButtonText = "Lưu";
+            this.bunifuFlatButton6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaTransition1.SetDecoration(this.bunifuFlatButton6, Guna.UI.Animation.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.bunifuFlatButton6, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.bunifuFlatButton6, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuFlatButton6.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton6.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton6.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton6.Iconimage")));
+            this.bunifuFlatButton6.Iconimage_right = null;
+            this.bunifuFlatButton6.Iconimage_right_Selected = null;
+            this.bunifuFlatButton6.Iconimage_Selected = null;
+            this.bunifuFlatButton6.IconMarginLeft = 0;
+            this.bunifuFlatButton6.IconMarginRight = 0;
+            this.bunifuFlatButton6.IconRightVisible = true;
+            this.bunifuFlatButton6.IconRightZoom = 0D;
+            this.bunifuFlatButton6.IconVisible = true;
+            this.bunifuFlatButton6.IconZoom = 90D;
+            this.bunifuFlatButton6.IsTab = false;
+            this.bunifuFlatButton6.Location = new System.Drawing.Point(1442, -545);
+            this.bunifuFlatButton6.Name = "bunifuFlatButton6";
+            this.bunifuFlatButton6.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(144)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton6.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(144)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton6.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton6.selected = false;
+            this.bunifuFlatButton6.Size = new System.Drawing.Size(100, 30);
+            this.bunifuFlatButton6.TabIndex = 62;
+            this.bunifuFlatButton6.Text = "Lưu";
+            this.bunifuFlatButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton6.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton6.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton6.Click += new System.EventHandler(this.bunifuFlatButton3_Click);
+            // 
+            // btnAddOrder
+            // 
+            this.btnAddOrder.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(144)))), ((int)(((byte)(255)))));
+            this.btnAddOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(144)))), ((int)(((byte)(255)))));
+            this.btnAddOrder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAddOrder.BorderRadius = 0;
+            this.btnAddOrder.ButtonText = "Thêm";
+            this.btnAddOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaTransition1.SetDecoration(this.btnAddOrder, Guna.UI.Animation.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.btnAddOrder, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.btnAddOrder, BunifuAnimatorNS.DecorationType.None);
+            this.btnAddOrder.DisabledColor = System.Drawing.Color.Gray;
+            this.btnAddOrder.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnAddOrder.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnAddOrder.Iconimage")));
+            this.btnAddOrder.Iconimage_right = null;
+            this.btnAddOrder.Iconimage_right_Selected = null;
+            this.btnAddOrder.Iconimage_Selected = null;
+            this.btnAddOrder.IconMarginLeft = 0;
+            this.btnAddOrder.IconMarginRight = 0;
+            this.btnAddOrder.IconRightVisible = true;
+            this.btnAddOrder.IconRightZoom = 0D;
+            this.btnAddOrder.IconVisible = true;
+            this.btnAddOrder.IconZoom = 90D;
+            this.btnAddOrder.IsTab = false;
+            this.btnAddOrder.Location = new System.Drawing.Point(756, 33);
+            this.btnAddOrder.Name = "btnAddOrder";
+            this.btnAddOrder.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(144)))), ((int)(((byte)(255)))));
+            this.btnAddOrder.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(144)))), ((int)(((byte)(255)))));
+            this.btnAddOrder.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnAddOrder.selected = false;
+            this.btnAddOrder.Size = new System.Drawing.Size(100, 30);
+            this.btnAddOrder.TabIndex = 62;
+            this.btnAddOrder.Text = "Thêm";
+            this.btnAddOrder.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddOrder.Textcolor = System.Drawing.Color.White;
+            this.btnAddOrder.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddOrder.Click += new System.EventHandler(this.btnAddOrder_Click);
+            // 
+            // bunifuFlatButton3
+            // 
+            this.bunifuFlatButton3.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(144)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(144)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton3.BorderRadius = 0;
+            this.bunifuFlatButton3.ButtonText = "Lưu";
+            this.bunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaTransition1.SetDecoration(this.bunifuFlatButton3, Guna.UI.Animation.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.bunifuFlatButton3, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.bunifuFlatButton3, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuFlatButton3.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton3.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton3.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton3.Iconimage")));
+            this.bunifuFlatButton3.Iconimage_right = null;
+            this.bunifuFlatButton3.Iconimage_right_Selected = null;
+            this.bunifuFlatButton3.Iconimage_Selected = null;
+            this.bunifuFlatButton3.IconMarginLeft = 0;
+            this.bunifuFlatButton3.IconMarginRight = 0;
+            this.bunifuFlatButton3.IconRightVisible = true;
+            this.bunifuFlatButton3.IconRightZoom = 0D;
+            this.bunifuFlatButton3.IconVisible = true;
+            this.bunifuFlatButton3.IconZoom = 90D;
+            this.bunifuFlatButton3.IsTab = false;
+            this.bunifuFlatButton3.Location = new System.Drawing.Point(81, 644);
+            this.bunifuFlatButton3.Name = "bunifuFlatButton3";
+            this.bunifuFlatButton3.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(144)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(144)))), ((int)(((byte)(255)))));
+            this.bunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton3.selected = false;
+            this.bunifuFlatButton3.Size = new System.Drawing.Size(100, 30);
+            this.bunifuFlatButton3.TabIndex = 62;
+            this.bunifuFlatButton3.Text = "Lưu";
+            this.bunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton3.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton3.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton3.Click += new System.EventHandler(this.bunifuFlatButton3_Click);
             // 
             // PanelGiaoDienNV
             // 
@@ -627,6 +1390,219 @@
             this.PanelGiaoDienNV.Name = "PanelGiaoDienNV";
             this.PanelGiaoDienNV.Size = new System.Drawing.Size(864, 697);
             this.PanelGiaoDienNV.TabIndex = 1;
+            // 
+            // PanelButtonNV
+            // 
+            this.PanelButtonNV.Controls.Add(this.btnUpdateAnh);
+            this.PanelButtonNV.Controls.Add(this.btnResetPassword);
+            this.PanelButtonNV.Controls.Add(this.btnCapNhatNV);
+            this.PanelButtonNV.Controls.Add(this.btnChangeStatus);
+            this.PanelButtonNV.Controls.Add(this.btnRenewNV);
+            this.PanelButtonNV.Controls.Add(this.btnThemNV);
+            this.PanelButtonNV.Controls.Add(this.btnXoaNV);
+            this.AnimacionSidebar.SetDecoration(this.PanelButtonNV, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.PanelButtonNV, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.PanelButtonNV, Guna.UI.Animation.DecorationType.None);
+            this.PanelButtonNV.Location = new System.Drawing.Point(37, 300);
+            this.PanelButtonNV.Name = "PanelButtonNV";
+            this.PanelButtonNV.Size = new System.Drawing.Size(802, 59);
+            this.PanelButtonNV.TabIndex = 77;
+            // 
+            // btnUpdateAnh
+            // 
+            this.btnUpdateAnh.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnUpdateAnh.AnimationHoverSpeed = 0.07F;
+            this.btnUpdateAnh.AnimationSpeed = 0.03F;
+            this.btnUpdateAnh.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnUpdateAnh.BorderColor = System.Drawing.Color.Black;
+            this.AnimacionSidebar.SetDecoration(this.btnUpdateAnh, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.btnUpdateAnh, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.btnUpdateAnh, Guna.UI.Animation.DecorationType.None);
+            this.btnUpdateAnh.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnUpdateAnh.FocusedColor = System.Drawing.Color.Empty;
+            this.btnUpdateAnh.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnUpdateAnh.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateAnh.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdateAnh.Image")));
+            this.btnUpdateAnh.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnUpdateAnh.Location = new System.Drawing.Point(697, 9);
+            this.btnUpdateAnh.Name = "btnUpdateAnh";
+            this.btnUpdateAnh.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnUpdateAnh.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnUpdateAnh.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnUpdateAnh.OnHoverImage = null;
+            this.btnUpdateAnh.OnPressedColor = System.Drawing.Color.Black;
+            this.btnUpdateAnh.Size = new System.Drawing.Size(94, 42);
+            this.btnUpdateAnh.TabIndex = 68;
+            this.btnUpdateAnh.Text = "Chọn Ảnh";
+            this.btnUpdateAnh.Click += new System.EventHandler(this.btnUpdateAnh_Click);
+            // 
+            // btnResetPassword
+            // 
+            this.btnResetPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnResetPassword.AnimationHoverSpeed = 0.07F;
+            this.btnResetPassword.AnimationSpeed = 0.03F;
+            this.btnResetPassword.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnResetPassword.BorderColor = System.Drawing.Color.Black;
+            this.AnimacionSidebar.SetDecoration(this.btnResetPassword, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.btnResetPassword, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.btnResetPassword, Guna.UI.Animation.DecorationType.None);
+            this.btnResetPassword.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnResetPassword.FocusedColor = System.Drawing.Color.Empty;
+            this.btnResetPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnResetPassword.ForeColor = System.Drawing.Color.White;
+            this.btnResetPassword.Image = ((System.Drawing.Image)(resources.GetObject("btnResetPassword.Image")));
+            this.btnResetPassword.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnResetPassword.Location = new System.Drawing.Point(383, 9);
+            this.btnResetPassword.Name = "btnResetPassword";
+            this.btnResetPassword.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnResetPassword.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnResetPassword.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnResetPassword.OnHoverImage = null;
+            this.btnResetPassword.OnPressedColor = System.Drawing.Color.Black;
+            this.btnResetPassword.Size = new System.Drawing.Size(150, 42);
+            this.btnResetPassword.TabIndex = 77;
+            this.btnResetPassword.Text = "Reset Mật Khẩu";
+            this.btnResetPassword.Click += new System.EventHandler(this.btnResetPassword_Click);
+            // 
+            // btnCapNhatNV
+            // 
+            this.btnCapNhatNV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCapNhatNV.AnimationHoverSpeed = 0.07F;
+            this.btnCapNhatNV.AnimationSpeed = 0.03F;
+            this.btnCapNhatNV.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnCapNhatNV.BorderColor = System.Drawing.Color.Black;
+            this.AnimacionSidebar.SetDecoration(this.btnCapNhatNV, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.btnCapNhatNV, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.btnCapNhatNV, Guna.UI.Animation.DecorationType.None);
+            this.btnCapNhatNV.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnCapNhatNV.FocusedColor = System.Drawing.Color.Empty;
+            this.btnCapNhatNV.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCapNhatNV.ForeColor = System.Drawing.Color.White;
+            this.btnCapNhatNV.Image = ((System.Drawing.Image)(resources.GetObject("btnCapNhatNV.Image")));
+            this.btnCapNhatNV.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnCapNhatNV.Location = new System.Drawing.Point(112, 9);
+            this.btnCapNhatNV.Name = "btnCapNhatNV";
+            this.btnCapNhatNV.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnCapNhatNV.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnCapNhatNV.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnCapNhatNV.OnHoverImage = null;
+            this.btnCapNhatNV.OnPressedColor = System.Drawing.Color.Black;
+            this.btnCapNhatNV.Size = new System.Drawing.Size(110, 42);
+            this.btnCapNhatNV.TabIndex = 65;
+            this.btnCapNhatNV.Text = "Cập Nhật";
+            this.btnCapNhatNV.Click += new System.EventHandler(this.btnCapNhatNV_Click);
+            // 
+            // btnChangeStatus
+            // 
+            this.btnChangeStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnChangeStatus.AnimationHoverSpeed = 0.07F;
+            this.btnChangeStatus.AnimationSpeed = 0.03F;
+            this.btnChangeStatus.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnChangeStatus.BorderColor = System.Drawing.Color.Black;
+            this.AnimacionSidebar.SetDecoration(this.btnChangeStatus, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.btnChangeStatus, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.btnChangeStatus, Guna.UI.Animation.DecorationType.None);
+            this.btnChangeStatus.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnChangeStatus.FocusedColor = System.Drawing.Color.Empty;
+            this.btnChangeStatus.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnChangeStatus.ForeColor = System.Drawing.Color.White;
+            this.btnChangeStatus.Image = ((System.Drawing.Image)(resources.GetObject("btnChangeStatus.Image")));
+            this.btnChangeStatus.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnChangeStatus.Location = new System.Drawing.Point(520, 9);
+            this.btnChangeStatus.Name = "btnChangeStatus";
+            this.btnChangeStatus.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnChangeStatus.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnChangeStatus.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnChangeStatus.OnHoverImage = null;
+            this.btnChangeStatus.OnPressedColor = System.Drawing.Color.Black;
+            this.btnChangeStatus.Size = new System.Drawing.Size(168, 42);
+            this.btnChangeStatus.TabIndex = 78;
+            this.btnChangeStatus.Text = "Vô Hiệu/ Kích Hoạt";
+            this.btnChangeStatus.Click += new System.EventHandler(this.btnChangeStatus_Click);
+            // 
+            // btnRenewNV
+            // 
+            this.btnRenewNV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRenewNV.AnimationHoverSpeed = 0.07F;
+            this.btnRenewNV.AnimationSpeed = 0.03F;
+            this.btnRenewNV.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnRenewNV.BorderColor = System.Drawing.Color.Black;
+            this.AnimacionSidebar.SetDecoration(this.btnRenewNV, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.btnRenewNV, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.btnRenewNV, Guna.UI.Animation.DecorationType.None);
+            this.btnRenewNV.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnRenewNV.FocusedColor = System.Drawing.Color.Empty;
+            this.btnRenewNV.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRenewNV.ForeColor = System.Drawing.Color.White;
+            this.btnRenewNV.Image = ((System.Drawing.Image)(resources.GetObject("btnRenewNV.Image")));
+            this.btnRenewNV.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnRenewNV.Location = new System.Drawing.Point(291, 9);
+            this.btnRenewNV.Name = "btnRenewNV";
+            this.btnRenewNV.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnRenewNV.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnRenewNV.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnRenewNV.OnHoverImage = null;
+            this.btnRenewNV.OnPressedColor = System.Drawing.Color.Black;
+            this.btnRenewNV.Size = new System.Drawing.Size(105, 42);
+            this.btnRenewNV.TabIndex = 67;
+            this.btnRenewNV.Text = "Làm Mới";
+            this.btnRenewNV.Click += new System.EventHandler(this.btnRenewNV_Click);
+            // 
+            // btnThemNV
+            // 
+            this.btnThemNV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnThemNV.AnimationHoverSpeed = 0.07F;
+            this.btnThemNV.AnimationSpeed = 0.03F;
+            this.btnThemNV.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnThemNV.BorderColor = System.Drawing.Color.Black;
+            this.AnimacionSidebar.SetDecoration(this.btnThemNV, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.btnThemNV, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.btnThemNV, Guna.UI.Animation.DecorationType.None);
+            this.btnThemNV.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnThemNV.FocusedColor = System.Drawing.Color.Empty;
+            this.btnThemNV.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnThemNV.ForeColor = System.Drawing.Color.White;
+            this.btnThemNV.Image = ((System.Drawing.Image)(resources.GetObject("btnThemNV.Image")));
+            this.btnThemNV.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnThemNV.Location = new System.Drawing.Point(14, 9);
+            this.btnThemNV.Name = "btnThemNV";
+            this.btnThemNV.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnThemNV.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnThemNV.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnThemNV.OnHoverImage = null;
+            this.btnThemNV.OnPressedColor = System.Drawing.Color.Black;
+            this.btnThemNV.Size = new System.Drawing.Size(111, 42);
+            this.btnThemNV.TabIndex = 64;
+            this.btnThemNV.Text = "Thêm";
+            this.btnThemNV.Click += new System.EventHandler(this.btnThemNV_Click);
+            // 
+            // btnXoaNV
+            // 
+            this.btnXoaNV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnXoaNV.AnimationHoverSpeed = 0.07F;
+            this.btnXoaNV.AnimationSpeed = 0.03F;
+            this.btnXoaNV.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnXoaNV.BorderColor = System.Drawing.Color.Black;
+            this.AnimacionSidebar.SetDecoration(this.btnXoaNV, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.btnXoaNV, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.btnXoaNV, Guna.UI.Animation.DecorationType.None);
+            this.btnXoaNV.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnXoaNV.FocusedColor = System.Drawing.Color.Empty;
+            this.btnXoaNV.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnXoaNV.ForeColor = System.Drawing.Color.White;
+            this.btnXoaNV.Image = ((System.Drawing.Image)(resources.GetObject("btnXoaNV.Image")));
+            this.btnXoaNV.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnXoaNV.Location = new System.Drawing.Point(209, 9);
+            this.btnXoaNV.Name = "btnXoaNV";
+            this.btnXoaNV.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnXoaNV.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnXoaNV.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnXoaNV.OnHoverImage = null;
+            this.btnXoaNV.OnPressedColor = System.Drawing.Color.Black;
+            this.btnXoaNV.Size = new System.Drawing.Size(95, 42);
+            this.btnXoaNV.TabIndex = 66;
+            this.btnXoaNV.Text = "Xóa";
+            this.btnXoaNV.Click += new System.EventHandler(this.btnXoaNV_Click);
             // 
             // cmbPosition
             // 
@@ -755,8 +1731,8 @@
             // 
             // dgvAccount
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvAccount.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
+            this.dgvAccount.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
             this.dgvAccount.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -765,26 +1741,26 @@
             this.dgvAccount.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvAccount.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvAccount.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvAccount.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAccount.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
             this.dgvAccount.ColumnHeadersHeight = 30;
             this.AnimacionSidebar.SetDecoration(this.dgvAccount, BunifuAnimatorNS.DecorationType.None);
             this.gunaTransition1.SetDecoration(this.dgvAccount, Guna.UI.Animation.DecorationType.None);
             this.AnimacionSidebarBack.SetDecoration(this.dgvAccount, BunifuAnimatorNS.DecorationType.None);
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvAccount.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvAccount.DefaultCellStyle = dataGridViewCellStyle21;
             this.dgvAccount.EnableHeadersVisualStyles = false;
             this.dgvAccount.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvAccount.Location = new System.Drawing.Point(11, 365);
@@ -1336,8 +2312,8 @@
             // 
             // dgvCustomer
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dgvCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
+            this.dgvCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
             this.dgvCustomer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvCustomer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -1345,26 +2321,26 @@
             this.dgvCustomer.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvCustomer.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvCustomer.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
             this.dgvCustomer.ColumnHeadersHeight = 30;
             this.AnimacionSidebar.SetDecoration(this.dgvCustomer, BunifuAnimatorNS.DecorationType.None);
             this.gunaTransition1.SetDecoration(this.dgvCustomer, Guna.UI.Animation.DecorationType.None);
             this.AnimacionSidebarBack.SetDecoration(this.dgvCustomer, BunifuAnimatorNS.DecorationType.None);
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCustomer.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCustomer.DefaultCellStyle = dataGridViewCellStyle24;
             this.dgvCustomer.EnableHeadersVisualStyles = false;
             this.dgvCustomer.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvCustomer.Location = new System.Drawing.Point(11, 420);
@@ -1756,22 +2732,22 @@
             // 
             this.AnimacionSidebarBack.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.AnimacionSidebarBack.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.AnimacionSidebarBack.DefaultAnimation = animation2;
+            animation6.AnimateOnlyDifferences = true;
+            animation6.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.BlindCoeff")));
+            animation6.LeafCoeff = 0F;
+            animation6.MaxTime = 1F;
+            animation6.MinTime = 0F;
+            animation6.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicCoeff")));
+            animation6.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicShift")));
+            animation6.MosaicSize = 0;
+            animation6.Padding = new System.Windows.Forms.Padding(0);
+            animation6.RotateCoeff = 0F;
+            animation6.RotateLimit = 0F;
+            animation6.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.ScaleCoeff")));
+            animation6.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.SlideCoeff")));
+            animation6.TimeCoeff = 0F;
+            animation6.TransparencyCoeff = 0F;
+            this.AnimacionSidebarBack.DefaultAnimation = animation6;
             // 
             // RadioPanelChart
             // 
@@ -1794,235 +2770,108 @@
             // 
             this.gunaTransition1.AnimationType = Guna.UI.Animation.AnimationType.Scale;
             this.gunaTransition1.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(0);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.gunaTransition1.DefaultAnimation = animation3;
+            animation5.AnimateOnlyDifferences = true;
+            animation5.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.BlindCoeff")));
+            animation5.LeafCoeff = 0F;
+            animation5.MaxTime = 1F;
+            animation5.MinTime = 0F;
+            animation5.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicCoeff")));
+            animation5.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicShift")));
+            animation5.MosaicSize = 0;
+            animation5.Padding = new System.Windows.Forms.Padding(0);
+            animation5.RotateCoeff = 0F;
+            animation5.RotateLimit = 0F;
+            animation5.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.ScaleCoeff")));
+            animation5.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.SlideCoeff")));
+            animation5.TimeCoeff = 0F;
+            animation5.TransparencyCoeff = 0F;
+            this.gunaTransition1.DefaultAnimation = animation5;
             // 
-            // btnThemNV
+            // lbTongTIen
             // 
-            this.btnThemNV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnThemNV.AnimationHoverSpeed = 0.07F;
-            this.btnThemNV.AnimationSpeed = 0.03F;
-            this.btnThemNV.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnThemNV.BorderColor = System.Drawing.Color.Black;
-            this.AnimacionSidebar.SetDecoration(this.btnThemNV, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebarBack.SetDecoration(this.btnThemNV, BunifuAnimatorNS.DecorationType.None);
-            this.gunaTransition1.SetDecoration(this.btnThemNV, Guna.UI.Animation.DecorationType.None);
-            this.btnThemNV.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnThemNV.FocusedColor = System.Drawing.Color.Empty;
-            this.btnThemNV.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnThemNV.ForeColor = System.Drawing.Color.White;
-            this.btnThemNV.Image = ((System.Drawing.Image)(resources.GetObject("btnThemNV.Image")));
-            this.btnThemNV.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnThemNV.Location = new System.Drawing.Point(14, 9);
-            this.btnThemNV.Name = "btnThemNV";
-            this.btnThemNV.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnThemNV.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnThemNV.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnThemNV.OnHoverImage = null;
-            this.btnThemNV.OnPressedColor = System.Drawing.Color.Black;
-            this.btnThemNV.Size = new System.Drawing.Size(111, 42);
-            this.btnThemNV.TabIndex = 64;
-            this.btnThemNV.Text = "Thêm";
-            this.btnThemNV.Click += new System.EventHandler(this.btnThemNV_Click);
+            this.lbTongTIen.AutoSize = true;
+            this.AnimacionSidebar.SetDecoration(this.lbTongTIen, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.lbTongTIen, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.lbTongTIen, Guna.UI.Animation.DecorationType.None);
+            this.lbTongTIen.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.lbTongTIen.ForeColor = System.Drawing.Color.Red;
+            this.lbTongTIen.Location = new System.Drawing.Point(106, 528);
+            this.lbTongTIen.Name = "lbTongTIen";
+            this.lbTongTIen.Size = new System.Drawing.Size(18, 20);
+            this.lbTongTIen.TabIndex = 66;
+            this.lbTongTIen.Text = "0";
             // 
-            // btnCapNhatNV
+            // txtOrder_TimSDTKH
             // 
-            this.btnCapNhatNV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCapNhatNV.AnimationHoverSpeed = 0.07F;
-            this.btnCapNhatNV.AnimationSpeed = 0.03F;
-            this.btnCapNhatNV.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnCapNhatNV.BorderColor = System.Drawing.Color.Black;
-            this.AnimacionSidebar.SetDecoration(this.btnCapNhatNV, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebarBack.SetDecoration(this.btnCapNhatNV, BunifuAnimatorNS.DecorationType.None);
-            this.gunaTransition1.SetDecoration(this.btnCapNhatNV, Guna.UI.Animation.DecorationType.None);
-            this.btnCapNhatNV.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnCapNhatNV.FocusedColor = System.Drawing.Color.Empty;
-            this.btnCapNhatNV.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnCapNhatNV.ForeColor = System.Drawing.Color.White;
-            this.btnCapNhatNV.Image = ((System.Drawing.Image)(resources.GetObject("btnCapNhatNV.Image")));
-            this.btnCapNhatNV.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnCapNhatNV.Location = new System.Drawing.Point(112, 9);
-            this.btnCapNhatNV.Name = "btnCapNhatNV";
-            this.btnCapNhatNV.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnCapNhatNV.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnCapNhatNV.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnCapNhatNV.OnHoverImage = null;
-            this.btnCapNhatNV.OnPressedColor = System.Drawing.Color.Black;
-            this.btnCapNhatNV.Size = new System.Drawing.Size(110, 42);
-            this.btnCapNhatNV.TabIndex = 65;
-            this.btnCapNhatNV.Text = "Cập Nhật";
-            this.btnCapNhatNV.Click += new System.EventHandler(this.btnCapNhatNV_Click);
+            this.txtOrder_TimSDTKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
+            this.txtOrder_TimSDTKH.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtOrder_TimSDTKH.BackgroundImage")));
+            this.txtOrder_TimSDTKH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.AnimacionSidebar.SetDecoration(this.txtOrder_TimSDTKH, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.txtOrder_TimSDTKH, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.txtOrder_TimSDTKH, Guna.UI.Animation.DecorationType.None);
+            this.txtOrder_TimSDTKH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.txtOrder_TimSDTKH.Icon = ((System.Drawing.Image)(resources.GetObject("txtOrder_TimSDTKH.Icon")));
+            this.txtOrder_TimSDTKH.Location = new System.Drawing.Point(560, 235);
+            this.txtOrder_TimSDTKH.Name = "txtOrder_TimSDTKH";
+            this.txtOrder_TimSDTKH.Size = new System.Drawing.Size(192, 42);
+            this.txtOrder_TimSDTKH.TabIndex = 64;
+            this.txtOrder_TimSDTKH.text = "Tìm kiếm";
+            this.txtOrder_TimSDTKH.OnTextChange += new System.EventHandler(this.bunifuTextbox2_OnTextChange);
             // 
-            // btnXoaNV
+            // btnTimKiemKHOrder
             // 
-            this.btnXoaNV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnXoaNV.AnimationHoverSpeed = 0.07F;
-            this.btnXoaNV.AnimationSpeed = 0.03F;
-            this.btnXoaNV.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnXoaNV.BorderColor = System.Drawing.Color.Black;
-            this.AnimacionSidebar.SetDecoration(this.btnXoaNV, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebarBack.SetDecoration(this.btnXoaNV, BunifuAnimatorNS.DecorationType.None);
-            this.gunaTransition1.SetDecoration(this.btnXoaNV, Guna.UI.Animation.DecorationType.None);
-            this.btnXoaNV.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnXoaNV.FocusedColor = System.Drawing.Color.Empty;
-            this.btnXoaNV.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnXoaNV.ForeColor = System.Drawing.Color.White;
-            this.btnXoaNV.Image = ((System.Drawing.Image)(resources.GetObject("btnXoaNV.Image")));
-            this.btnXoaNV.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnXoaNV.Location = new System.Drawing.Point(209, 9);
-            this.btnXoaNV.Name = "btnXoaNV";
-            this.btnXoaNV.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnXoaNV.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnXoaNV.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnXoaNV.OnHoverImage = null;
-            this.btnXoaNV.OnPressedColor = System.Drawing.Color.Black;
-            this.btnXoaNV.Size = new System.Drawing.Size(95, 42);
-            this.btnXoaNV.TabIndex = 66;
-            this.btnXoaNV.Text = "Xóa";
-            this.btnXoaNV.Click += new System.EventHandler(this.btnXoaNV_Click);
+            this.btnTimKiemKHOrder.AnimationHoverSpeed = 0.07F;
+            this.btnTimKiemKHOrder.AnimationSpeed = 0.03F;
+            this.btnTimKiemKHOrder.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnTimKiemKHOrder.BorderColor = System.Drawing.Color.Black;
+            this.AnimacionSidebar.SetDecoration(this.btnTimKiemKHOrder, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.btnTimKiemKHOrder, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.btnTimKiemKHOrder, Guna.UI.Animation.DecorationType.None);
+            this.btnTimKiemKHOrder.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnTimKiemKHOrder.FocusedColor = System.Drawing.Color.Empty;
+            this.btnTimKiemKHOrder.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnTimKiemKHOrder.ForeColor = System.Drawing.Color.White;
+            this.btnTimKiemKHOrder.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiemKHOrder.Image")));
+            this.btnTimKiemKHOrder.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnTimKiemKHOrder.Location = new System.Drawing.Point(767, 235);
+            this.btnTimKiemKHOrder.Name = "btnTimKiemKHOrder";
+            this.btnTimKiemKHOrder.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnTimKiemKHOrder.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnTimKiemKHOrder.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnTimKiemKHOrder.OnHoverImage = null;
+            this.btnTimKiemKHOrder.OnPressedColor = System.Drawing.Color.Black;
+            this.btnTimKiemKHOrder.Size = new System.Drawing.Size(89, 37);
+            this.btnTimKiemKHOrder.TabIndex = 85;
+            this.btnTimKiemKHOrder.Text = "Search";
+            this.btnTimKiemKHOrder.Click += new System.EventHandler(this.btnTimKiemKHOrder_Click);
             // 
-            // btnRenewNV
+            // lbGiamGia
             // 
-            this.btnRenewNV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRenewNV.AnimationHoverSpeed = 0.07F;
-            this.btnRenewNV.AnimationSpeed = 0.03F;
-            this.btnRenewNV.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnRenewNV.BorderColor = System.Drawing.Color.Black;
-            this.AnimacionSidebar.SetDecoration(this.btnRenewNV, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebarBack.SetDecoration(this.btnRenewNV, BunifuAnimatorNS.DecorationType.None);
-            this.gunaTransition1.SetDecoration(this.btnRenewNV, Guna.UI.Animation.DecorationType.None);
-            this.btnRenewNV.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnRenewNV.FocusedColor = System.Drawing.Color.Empty;
-            this.btnRenewNV.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnRenewNV.ForeColor = System.Drawing.Color.White;
-            this.btnRenewNV.Image = ((System.Drawing.Image)(resources.GetObject("btnRenewNV.Image")));
-            this.btnRenewNV.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnRenewNV.Location = new System.Drawing.Point(291, 9);
-            this.btnRenewNV.Name = "btnRenewNV";
-            this.btnRenewNV.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnRenewNV.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnRenewNV.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnRenewNV.OnHoverImage = null;
-            this.btnRenewNV.OnPressedColor = System.Drawing.Color.Black;
-            this.btnRenewNV.Size = new System.Drawing.Size(105, 42);
-            this.btnRenewNV.TabIndex = 67;
-            this.btnRenewNV.Text = "Làm Mới";
-            this.btnRenewNV.Click += new System.EventHandler(this.btnRenewNV_Click);
+            this.lbGiamGia.AutoSize = true;
+            this.AnimacionSidebar.SetDecoration(this.lbGiamGia, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.lbGiamGia, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.lbGiamGia, Guna.UI.Animation.DecorationType.None);
+            this.lbGiamGia.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.lbGiamGia.ForeColor = System.Drawing.Color.Red;
+            this.lbGiamGia.Location = new System.Drawing.Point(106, 560);
+            this.lbGiamGia.Name = "lbGiamGia";
+            this.lbGiamGia.Size = new System.Drawing.Size(18, 20);
+            this.lbGiamGia.TabIndex = 66;
+            this.lbGiamGia.Text = "0";
             // 
-            // btnResetPassword
+            // lbThanhToanTien
             // 
-            this.btnResetPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnResetPassword.AnimationHoverSpeed = 0.07F;
-            this.btnResetPassword.AnimationSpeed = 0.03F;
-            this.btnResetPassword.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnResetPassword.BorderColor = System.Drawing.Color.Black;
-            this.AnimacionSidebar.SetDecoration(this.btnResetPassword, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebarBack.SetDecoration(this.btnResetPassword, BunifuAnimatorNS.DecorationType.None);
-            this.gunaTransition1.SetDecoration(this.btnResetPassword, Guna.UI.Animation.DecorationType.None);
-            this.btnResetPassword.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnResetPassword.FocusedColor = System.Drawing.Color.Empty;
-            this.btnResetPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnResetPassword.ForeColor = System.Drawing.Color.White;
-            this.btnResetPassword.Image = ((System.Drawing.Image)(resources.GetObject("btnResetPassword.Image")));
-            this.btnResetPassword.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnResetPassword.Location = new System.Drawing.Point(383, 9);
-            this.btnResetPassword.Name = "btnResetPassword";
-            this.btnResetPassword.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnResetPassword.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnResetPassword.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnResetPassword.OnHoverImage = null;
-            this.btnResetPassword.OnPressedColor = System.Drawing.Color.Black;
-            this.btnResetPassword.Size = new System.Drawing.Size(150, 42);
-            this.btnResetPassword.TabIndex = 77;
-            this.btnResetPassword.Text = "Reset Mật Khẩu";
-            this.btnResetPassword.Click += new System.EventHandler(this.btnResetPassword_Click);
-            // 
-            // btnChangeStatus
-            // 
-            this.btnChangeStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnChangeStatus.AnimationHoverSpeed = 0.07F;
-            this.btnChangeStatus.AnimationSpeed = 0.03F;
-            this.btnChangeStatus.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnChangeStatus.BorderColor = System.Drawing.Color.Black;
-            this.AnimacionSidebar.SetDecoration(this.btnChangeStatus, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebarBack.SetDecoration(this.btnChangeStatus, BunifuAnimatorNS.DecorationType.None);
-            this.gunaTransition1.SetDecoration(this.btnChangeStatus, Guna.UI.Animation.DecorationType.None);
-            this.btnChangeStatus.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnChangeStatus.FocusedColor = System.Drawing.Color.Empty;
-            this.btnChangeStatus.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnChangeStatus.ForeColor = System.Drawing.Color.White;
-            this.btnChangeStatus.Image = ((System.Drawing.Image)(resources.GetObject("btnChangeStatus.Image")));
-            this.btnChangeStatus.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnChangeStatus.Location = new System.Drawing.Point(520, 9);
-            this.btnChangeStatus.Name = "btnChangeStatus";
-            this.btnChangeStatus.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnChangeStatus.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnChangeStatus.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnChangeStatus.OnHoverImage = null;
-            this.btnChangeStatus.OnPressedColor = System.Drawing.Color.Black;
-            this.btnChangeStatus.Size = new System.Drawing.Size(168, 42);
-            this.btnChangeStatus.TabIndex = 78;
-            this.btnChangeStatus.Text = "Vô Hiệu/ Kích Hoạt";
-            this.btnChangeStatus.Click += new System.EventHandler(this.btnChangeStatus_Click);
-            // 
-            // btnUpdateAnh
-            // 
-            this.btnUpdateAnh.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnUpdateAnh.AnimationHoverSpeed = 0.07F;
-            this.btnUpdateAnh.AnimationSpeed = 0.03F;
-            this.btnUpdateAnh.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnUpdateAnh.BorderColor = System.Drawing.Color.Black;
-            this.AnimacionSidebar.SetDecoration(this.btnUpdateAnh, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebarBack.SetDecoration(this.btnUpdateAnh, BunifuAnimatorNS.DecorationType.None);
-            this.gunaTransition1.SetDecoration(this.btnUpdateAnh, Guna.UI.Animation.DecorationType.None);
-            this.btnUpdateAnh.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnUpdateAnh.FocusedColor = System.Drawing.Color.Empty;
-            this.btnUpdateAnh.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnUpdateAnh.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateAnh.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdateAnh.Image")));
-            this.btnUpdateAnh.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnUpdateAnh.Location = new System.Drawing.Point(697, 9);
-            this.btnUpdateAnh.Name = "btnUpdateAnh";
-            this.btnUpdateAnh.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnUpdateAnh.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnUpdateAnh.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnUpdateAnh.OnHoverImage = null;
-            this.btnUpdateAnh.OnPressedColor = System.Drawing.Color.Black;
-            this.btnUpdateAnh.Size = new System.Drawing.Size(94, 42);
-            this.btnUpdateAnh.TabIndex = 68;
-            this.btnUpdateAnh.Text = "Chọn Ảnh";
-            this.btnUpdateAnh.Click += new System.EventHandler(this.btnUpdateAnh_Click);
-            // 
-            // PanelButtonNV
-            // 
-            this.PanelButtonNV.Controls.Add(this.btnUpdateAnh);
-            this.PanelButtonNV.Controls.Add(this.btnResetPassword);
-            this.PanelButtonNV.Controls.Add(this.btnCapNhatNV);
-            this.PanelButtonNV.Controls.Add(this.btnChangeStatus);
-            this.PanelButtonNV.Controls.Add(this.btnRenewNV);
-            this.PanelButtonNV.Controls.Add(this.btnThemNV);
-            this.PanelButtonNV.Controls.Add(this.btnXoaNV);
-            this.AnimacionSidebar.SetDecoration(this.PanelButtonNV, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebarBack.SetDecoration(this.PanelButtonNV, BunifuAnimatorNS.DecorationType.None);
-            this.gunaTransition1.SetDecoration(this.PanelButtonNV, Guna.UI.Animation.DecorationType.None);
-            this.PanelButtonNV.Location = new System.Drawing.Point(37, 300);
-            this.PanelButtonNV.Name = "PanelButtonNV";
-            this.PanelButtonNV.Size = new System.Drawing.Size(802, 59);
-            this.PanelButtonNV.TabIndex = 77;
+            this.lbThanhToanTien.AutoSize = true;
+            this.AnimacionSidebar.SetDecoration(this.lbThanhToanTien, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.lbThanhToanTien, BunifuAnimatorNS.DecorationType.None);
+            this.gunaTransition1.SetDecoration(this.lbThanhToanTien, Guna.UI.Animation.DecorationType.None);
+            this.lbThanhToanTien.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.lbThanhToanTien.ForeColor = System.Drawing.Color.Red;
+            this.lbThanhToanTien.Location = new System.Drawing.Point(119, 589);
+            this.lbThanhToanTien.Name = "lbThanhToanTien";
+            this.lbThanhToanTien.Size = new System.Drawing.Size(18, 20);
+            this.lbThanhToanTien.TabIndex = 66;
+            this.lbThanhToanTien.Text = "0";
             // 
             // TrangChu
             // 
@@ -2045,8 +2894,13 @@
             this.Sidebar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Wrapper.ResumeLayout(false);
+            this.BanHang.ResumeLayout(false);
+            this.BanHang.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvOrder)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProductOrder)).EndInit();
             this.PanelGiaoDienNV.ResumeLayout(false);
             this.PanelGiaoDienNV.PerformLayout();
+            this.PanelButtonNV.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BoxAvatar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAccount)).EndInit();
             this.PanelDSKhachHang.ResumeLayout(false);
@@ -2059,7 +2913,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Restaurar)).EndInit();
             this.MenuTop.ResumeLayout(false);
             this.MenuTop.PerformLayout();
-            this.PanelButtonNV.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2147,6 +3000,37 @@
         private Guna.UI.WinForms.GunaButton btnRenewNV;
         private Guna.UI.WinForms.GunaButton btnThemNV;
         private Guna.UI.WinForms.GunaButton btnXoaNV;
+        private Guna.UI.WinForms.GunaPanel BanHang;
+        private Guna.UI.WinForms.GunaTextBox txtDiaChiVl;
+        private System.Windows.Forms.RichTextBox txtNoteOrder;
+        private Guna.UI.WinForms.GunaLabel gunaLabel11;
+        private Guna.UI.WinForms.GunaDateTimePicker dtThoiGianVL;
+        private Guna.UI.WinForms.GunaTextBox txtsdtVL;
+        private Guna.UI.WinForms.GunaTextBox txtTenVL;
+        private Guna.UI.WinForms.GunaButton btnSearch;
+        private Guna.UI.WinForms.GunaDataGridView dgvOrder;
+        private Guna.UI.WinForms.GunaLabel gunaLabel21;
+        private Guna.UI.WinForms.GunaDataGridView dgvProductOrder;
+        private Guna.UI.WinForms.GunaLabel gunaLabel17;
+        private Guna.UI.WinForms.GunaLabel gunaLabel18;
+        private Guna.UI.WinForms.GunaLabel gunaLabel19;
+        private Bunifu.Framework.UI.BunifuTextbox bunifuTextbox1;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton3;
+        private Guna.UI.WinForms.GunaTextBox txtQuantity;
+        private Guna.UI.WinForms.GunaTextBox Pro_Price;
+        private Guna.UI.WinForms.GunaTextBox txtNamePro;
+        private Guna.UI.WinForms.GunaTextBox txtSPOrder;
+        private Guna.UI.WinForms.GunaLabel gunaLabel12;
+        private Bunifu.Framework.UI.BunifuFlatButton btnRemovePro;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton6;
+        private Bunifu.Framework.UI.BunifuFlatButton btnAddOrder;
+        private Bunifu.Framework.UI.BunifuFlatButton btnUpdateOrder;
+        private Guna.UI.WinForms.GunaLabel lbTongTIen;
+        private Guna.UI.WinForms.GunaButton btnTimKiemKHOrder;
+        private Bunifu.Framework.UI.BunifuTextbox txtOrder_TimSDTKH;
+        private Guna.UI.WinForms.GunaLabel lbGiamGia;
+        private Guna.UI.WinForms.GunaLabel lbThanhToanTien;
     }
 }
 
