@@ -63,7 +63,6 @@ namespace Design_Dashboard_Modern
             cmbTimKiemNV.Items.Add("Vị Trí");
             cmbTimKiemNV.Items.Add("Số NV");
             cmbTimKiemNV.Items.Add("Địa Chỉ");
-            cmbTimKiemNV.Items.Add("Ngày Sinh");
             cmbTimKiemNV.Items.Add("Email");
             cmbTimKiemNV.SelectedItem = "Mã NV";
             txtIDNV.Enabled = false;
@@ -93,14 +92,13 @@ namespace Design_Dashboard_Modern
             {
                 MessageBox.Show("Có lỗi khi tải dữ liệu của Level", ex.ToString());
             }
-            cmbTimKiem.Items.Add("Mã KH");
-            cmbTimKiem.Items.Add("Tên KH");
-            cmbTimKiem.Items.Add("Số ĐT");
-            cmbTimKiem.Items.Add("Địa Chỉ");
-            cmbTimKiem.Items.Add("Email");
-            cmbTimKiem.Items.Add("Level");
-            cmbTimKiem.Items.Add("Ngày Sinh");
-            cmbTimKiem.SelectedItem = "Mã KH";
+            cmbTimKiemKH.Items.Add("Mã KH");
+            cmbTimKiemKH.Items.Add("Tên KH");
+            cmbTimKiemKH.Items.Add("Số ĐT");
+            cmbTimKiemKH.Items.Add("Địa Chỉ");
+            cmbTimKiemKH.Items.Add("Email");
+            cmbTimKiemKH.Items.Add("Level");
+            cmbTimKiemKH.SelectedItem = "Mã KH";
             txtCustomer_id.Enabled = false;
         }
 
@@ -345,8 +343,8 @@ namespace Design_Dashboard_Modern
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            string keySearching = txtSearch.Text;
-            string typeSearching = cmbTimKiem.SelectedItem.ToString();
+            string keySearching = txtSearchKH.Text;
+            string typeSearching = cmbTimKiemKH.SelectedItem.ToString();
             if (typeSearching == null)
             {
                 MessageBox.Show("Bạn chưa chọn loại tìm kiếm!");
@@ -354,40 +352,48 @@ namespace Design_Dashboard_Modern
             else
             if (typeSearching.Equals("Mã KH"))
             {
-                int idCus = Convert.ToInt32(txtSearch.Text);
+                int idCus = Convert.ToInt32(txtSearchKH.Text);
                 QuanLyBanHang_DoAnEntities db = new QuanLyBanHang_DoAnEntities();
-                var Customer = db.Customers.Where(x => x.Cus_id == idCus);
+                var Customer = from c in db.Customers where c.Cus_id == idCus select new { c.Cus_id, c.Cus_name, c.Cus_phone, c.Cus_address, c.Cus_email, c.Cus_Point, c.Cus_level, c.Cus_DOB };
                 dgvCustomer.DataSource = Customer.ToList();
             }
             else if (typeSearching.Equals("Tên KH"))
             {
                 QuanLyBanHang_DoAnEntities db = new QuanLyBanHang_DoAnEntities();
-                var Customer = db.Customers.Where(x => x.Cus_name.Contains(keySearching));
+                var Customer = from c in db.Customers where c.Cus_name.Contains(keySearching) select new { c.Cus_id, c.Cus_name, c.Cus_phone, c.Cus_address, c.Cus_email, c.Cus_Point, c.Cus_level, c.Cus_DOB };
                 dgvCustomer.DataSource = Customer.ToList();
             }
             else if (typeSearching.Equals("Số ĐT"))
             {
                 QuanLyBanHang_DoAnEntities db = new QuanLyBanHang_DoAnEntities();
-                var Customer = db.Customers.Where(x => x.Cus_phone == keySearching);
+                var Customer = from c in db.Customers
+                               where c.Cus_phone.Contains(keySearching)
+                               select new { c.Cus_id, c.Cus_name, c.Cus_phone, c.Cus_address, c.Cus_email, c.Cus_Point, c.Cus_level, c.Cus_DOB };
                 dgvCustomer.DataSource = Customer.ToList();
             }
             else if (typeSearching.Equals("Địa Chỉ"))
             {
                 QuanLyBanHang_DoAnEntities db = new QuanLyBanHang_DoAnEntities();
-                var Customer = db.Customers.Where(x => x.Cus_address.Contains(keySearching));
+                var Customer = from c in db.Customers
+                               where c.Cus_address.Contains(keySearching)
+                               select new { c.Cus_id, c.Cus_name, c.Cus_phone, c.Cus_address, c.Cus_email, c.Cus_Point, c.Cus_level, c.Cus_DOB };
                 dgvCustomer.DataSource = Customer.ToList();
             }
             else if (typeSearching.Equals("Email"))
             {
                 QuanLyBanHang_DoAnEntities db = new QuanLyBanHang_DoAnEntities();
-                var Customer = db.Customers.Where(x => x.Cus_email.Contains(keySearching));
+                var Customer = from c in db.Customers
+                               where c.Cus_email.Contains(keySearching)
+                               select new { c.Cus_id, c.Cus_name, c.Cus_phone, c.Cus_address, c.Cus_email, c.Cus_Point, c.Cus_level, c.Cus_DOB };
                 dgvCustomer.DataSource = Customer.ToList();
             }
             else if (typeSearching.Equals("Level"))
             {
                 int level = Convert.ToInt32(keySearching);
                 QuanLyBanHang_DoAnEntities db = new QuanLyBanHang_DoAnEntities();
-                var Customer = db.Customers.Where(x => x.Cus_level == level);
+                var Customer = from c in db.Customers
+                               where c.Cus_level == level
+                               select new { c.Cus_id, c.Cus_name, c.Cus_phone, c.Cus_address, c.Cus_email, c.Cus_Point, c.Cus_level, c.Cus_DOB };
                 dgvCustomer.DataSource = Customer.ToList();
             }
         }
@@ -630,41 +636,52 @@ namespace Design_Dashboard_Modern
                 else
                 if (typeSearching.Equals("Mã NV"))
                 {
-                    int idCus = Convert.ToInt32(txtSearch.Text);
+                    int idCus = Convert.ToInt32(txtTimKiemNV.Text);
                     QuanLyBanHang_DoAnEntities db = new QuanLyBanHang_DoAnEntities();
-                    var Account = db.Accounts.Where(x => x.Account_id == idCus);
-                    dgvAccount.DataSource = Account.ToList();
+                    var result = from d in db.Accounts where d.Account_id == idCus select new { d.Account_id, d.Account_name, d.Pos_id, d.Account_address, d.Account_phone, d.Account_DOB, d.Account_Email, d.Account_status};
+                    dgvAccount.DataSource = result.ToList();
                 }
                 else if (typeSearching.Equals("Tên NV"))
                 {
                     QuanLyBanHang_DoAnEntities db = new QuanLyBanHang_DoAnEntities();
-                    var Account = db.Accounts.Where(x => x.Account_name.Contains(keySearching));
+                    var Account = from d in db.Accounts where d.Account_name.Contains(keySearching) select new { d.Account_id, d.Account_name, d.Pos_id, d.Account_address, d.Account_phone, d.Account_DOB, d.Account_Email, d.Account_status};
                     dgvAccount.DataSource = Account.ToList();
                 }
                 else if (typeSearching.Equals("Vị Trí"))
                 {
-                    QuanLyBanHang_DoAnEntities db = new QuanLyBanHang_DoAnEntities();
-                    Position Pos = db.Positions.FirstOrDefault(x => x.Pos_name.Contains(keySearching));
-                    int Pos_id = Pos.Pos_id;
-                    var Account = db.Accounts.Where(x => x.Pos_id == Pos_id);
-                    dgvAccount.DataSource = Account.ToList();
+                    try
+                    {
+                        QuanLyBanHang_DoAnEntities db = new QuanLyBanHang_DoAnEntities();
+                        Position Pos = db.Positions.FirstOrDefault(x => x.Pos_name.Contains(keySearching));
+                        int Pos_id = Pos.Pos_id;
+                        var Account = from d in db.Accounts where d.Pos_id == Pos_id select new { d.Account_id, d.Account_name, d.Pos_id, d.Account_address, d.Account_phone, d.Account_DOB, d.Account_Email, d.Account_status };
+                        dgvAccount.DataSource = Account.ToList();
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Từ khóa không hợp lệ!");
+                    }
                 }
                 else if (typeSearching.Equals("Số NV"))
                 {
                     QuanLyBanHang_DoAnEntities db = new QuanLyBanHang_DoAnEntities();
-                    var Account = db.Accounts.Where(x => x.Account_phone.Contains(keySearching));
+                    var Account = from d in db.Accounts where d.Account_phone.Contains(keySearching) select new { d.Account_id, d.Account_name, d.Pos_id, d.Account_address, d.Account_phone, d.Account_DOB, d.Account_Email, d.Account_status };
                     dgvAccount.DataSource = Account.ToList();
                 }
                 else if (typeSearching.Equals("Địa Chỉ"))
                 {
                     QuanLyBanHang_DoAnEntities db = new QuanLyBanHang_DoAnEntities();
-                    var Account = db.Accounts.Where(x => x.Account_Email.Contains(keySearching));
+                    var Account = from d in db.Accounts
+                                  where d.Account_address.Contains(keySearching)
+                                  select new { d.Account_id, d.Account_name, d.Pos_id, d.Account_address, d.Account_phone, d.Account_DOB, d.Account_Email, d.Account_status };
                     dgvAccount.DataSource = Account.ToList();
                 }
                 else if (typeSearching.Equals("Email"))
                 {
                     QuanLyBanHang_DoAnEntities db = new QuanLyBanHang_DoAnEntities();
-                    var Account = db.Accounts.Where(x => x.Account_Email.Contains(keySearching));
+                    var Account = from d in db.Accounts
+                                  where d.Account_Email.Contains(keySearching)
+                                  select new { d.Account_id, d.Account_name, d.Pos_id, d.Account_address, d.Account_phone, d.Account_DOB, d.Account_Email, d.Account_status };
                     dgvAccount.DataSource = Account.ToList();
                 }
             }
@@ -716,7 +733,38 @@ namespace Design_Dashboard_Modern
 
         private void txtTimKiemNV_Enter(object sender, EventArgs e)
         {
+            if (txtTimKiemNV.Text == "Tìm Kiếm")
+            {
+                txtTimKiemNV.Text = "";
+                txtTimKiemNV.ForeColor = Color.White;
+            }
+        }
 
+        private void txtTimKiemNV_Leave(object sender, EventArgs e)
+        {
+            if (txtTimKiemNV.Text == "")
+            {
+                txtTimKiemNV.Text = "Tìm Kiếm";
+                txtTimKiemNV.ForeColor = Color.Silver;
+            }
+        }
+
+        private void txtSearchKH_Leave(object sender, EventArgs e)
+        {
+            if (txtTimKiemNV.Text == "")
+            {
+                txtTimKiemNV.Text = "Tìm Kiếm";
+                txtTimKiemNV.ForeColor = Color.Silver;
+            }
+        }
+
+        private void txtSearchKH_Enter(object sender, EventArgs e)
+        {
+            if (txtTimKiemNV.Text == "Tìm Kiếm")
+            {
+                txtTimKiemNV.Text = "";
+                txtTimKiemNV.ForeColor = Color.White;
+            }
         }
     }
 }
