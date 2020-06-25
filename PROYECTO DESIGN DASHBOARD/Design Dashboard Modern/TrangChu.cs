@@ -173,7 +173,7 @@ namespace Design_Dashboard_Modern
         private void btnBanHang_Click(object sender, EventArgs e)
         {
             int Pos_id = LayQuyen();
-            if (Pos_id == 3)
+            if (Pos_id == 1)
             {
                 MessageBox.Show("Bạn không có quyền hiển thị bán hàng!");
             }
@@ -181,11 +181,23 @@ namespace Design_Dashboard_Modern
             {
                 SidePanel.Height = btnBanHang.Height;
                 SidePanel.Top = btnBanHang.Top + 25;
-                /*Panelbanhang.BringToFront();
-                LoadDataBanHang();*/
+                BanHang.BringToFront();
+                LoadDataBanHang();
             }
 
         }
+
+        void LoadDataBanHang()
+        {
+            QuanLyBanHang_DoAnEntities db = new QuanLyBanHang_DoAnEntities();
+            var result = from o in db.Orders
+                         join od in db.Order_detail on o.Order_id equals od.Order_id
+                         join a in db.Accounts on o.Account_id equals a.Account_id
+                         join c in db.Customers on o.Cus_id equals c.Cus_id
+                         select new { o.Order_id, a.Account_name, c.Cus_name, c.Cus_phone, od.Pro_id, od.Quantity, od.order_total_price };
+            dgvOrder.DataSource = result.ToList();
+        }
+
 
         private void btnXuatKho_Click(object sender, EventArgs e)
         {
@@ -718,5 +730,160 @@ namespace Design_Dashboard_Modern
         {
 
         }
+
+
+        void LoadProductsOrder()
+        {
+            QuanLyBanHang_DoAnEntities db = new QuanLyBanHang_DoAnEntities();
+            var result = from p in db.Products
+                         select new { p.Pro_id, p.Pro_name, p.Pro_quantity, p.Pro_Price };
+            dgvProductOrder.DataSource = result.ToList();
+        }
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            String key = bunifuTextbox1.Text;
+            if (key.Length == 0)
+            {
+                LoadProductsOrder();
+            }
+            else
+            {
+                QuanLyBanHang_DoAnEntities db = new QuanLyBanHang_DoAnEntities();
+                var result = from
+                    c in db.Products
+                             where c.Pro_name.Contains(key)
+                             select new
+                             {
+                                 c.Pro_id,
+                                 c.Pro_name,
+                                 c.Pro_Price,
+                                 c.Pro_quantity
+                             };
+                dgvProductOrder.DataSource = result.ToList();
+
+            }
+            
+        }
+
+        private void gunaDateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaLabel11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaLabel16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton3_Click(object sender, EventArgs e)
+        {
+            if(txtTenVL.Text.Length != 0  && txtsdtVL.Text.Length != 0 && txtDiaChiVl.Text.Length != 0) 
+            {
+                string TenKhachVL = txtTenVL.Text;
+                string SDTKhachVL = txtsdtVL.Text;
+                string DiaChiVL = txtDiaChiVl.Text;
+                DateTime DOBVL = dtThoiGianVL.Value;
+                QuanLyBanHang_DoAnEntities db = new QuanLyBanHang_DoAnEntities();
+                string SDT = txtsdtVL.Text;
+                Customer cus = db.Customers.Where(x => x.Cus_phone.ToString() == SDT);
+                if ()
+                {
+
+                }   
+                else
+                {
+                    Customer cus_new = new Customer();
+                    cus_new.Cus_name = TenKhachVL;
+                    cus_new.Cus_phone = SDTKhachVL;
+                    cus_new.Cus_address = DiaChiVL;
+                    cus_new.Cus_DOB = DOBVL;
+                    cus_new.Cus_level = 1;
+                    cus_new.Cus_Point = 0;
+                    db.Customers.Add(cus_new);
+                    db.SaveChanges();
+                }    
+                Order or = new Order();
+                or.Order_note = txtNoteOrder.Text;
+                or.Cus_id 
+
+
+
+            } else
+            {
+                MessageBox.Show("Lỗi mẹ rồi !");
+            }
+
+        }
+
+        List<Order_Item> list = new List<Order_Item>();
+        private void dgvProductOrder_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtSPOrder.Text = dgvProductOrder[0, dgvProductOrder.CurrentRow.Index].Value.ToString();
+            txtNamePro.Text = dgvProductOrder[1, dgvProductOrder.CurrentRow.Index].Value.ToString();
+            Pro_Price.Text = dgvProductOrder[2, dgvProductOrder.CurrentRow.Index].Value.ToString();
+            txtQuantity.Text = dgvProductOrder[3, dgvProductOrder.CurrentRow.Index].Value.ToString();   
+        }
+        double TongTien = 0;
+        private void btnAddOrder_Click(object sender, EventArgs e)
+        {
+            Order_Item oi = new Order_Item();
+            oi.Pro_id1 = txtSPOrder.Text;
+            oi.Pro_name1 = txtNamePro.Text;
+            oi.Pro_Price1 = Convert.ToDouble(Pro_Price.Text);
+            oi.Pro_quantity1 = Convert.ToInt32(txtQuantity.Text);
+            TongTien += oi.Pro_Price1 * Convert.ToDouble(oi.Pro_quantity1);
+            list.Add(oi);
+            dgvOrder.DataSource = list.ToList();
+            lbTongTIen.Text = TongTien.ToString();
+
+            double valueTongTien = Convert.ToDouble(TongTien.ToString());
+            double GiamGia = Convert.ToDouble(lbGiamGia.Text);
+            double ThanhToanTien = valueTongTien - (valueTongTien * GiamGia /100);
+            lbThanhToanTien.Text = Convert.ToString(ThanhToanTien) + " đ";
+        }
+
+        private void bunifuTextbox2_OnTextChange(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTimKiemKHOrder_Click(object sender, EventArgs e)
+        {
+            QuanLyBanHang_DoAnEntities db = new QuanLyBanHang_DoAnEntities();
+            string keySDT = txtOrder_TimSDTKH.text;
+            Customer cus = db.Customers.FirstOrDefault(x => x.Cus_phone == keySDT);
+            txtTenVL.Text = Convert.ToString(cus.Cus_name);
+            dtThoiGianVL.Value = Convert.ToDateTime(cus.Cus_DOB);
+            txtsdtVL.Text = Convert.ToString(cus.Cus_phone);
+            txtDiaChiVl.Text = Convert.ToString(cus.Cus_address);
+            lbGiamGia.Text = Convert.ToString(cus.Cus_Point) + " %";
+            double TongTien = Convert.ToDouble(lbTongTIen.Text);
+            double GiamGia = Convert.ToDouble(cus.Cus_Point);
+            double ThanhToanTien = TongTien - (TongTien * GiamGia / 100);
+            lbThanhToanTien.Text = Convert.ToString(ThanhToanTien) + " đ";
+        }
     }
 }
+
+
+

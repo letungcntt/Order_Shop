@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\doanv\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\DoAn_Order\DoAn_Order\PROYECTO DESIGN DASHBOARD\Design Dashboard Modern\Database.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\letun\Order_Shop\PROYECTO DESIGN DASHBOARD\Design Dashboard Modern\Database.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
