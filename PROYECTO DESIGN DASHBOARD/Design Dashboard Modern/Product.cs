@@ -27,6 +27,7 @@ namespace Design_Dashboard_Modern
         public Nullable<int> Cate_id { get; set; }
         public Nullable<double> Pro_Price { get; set; }
         public Nullable<int> Provider_id { get; set; }
+        public Nullable<int> Pro_quantity { get; set; }
     
         public virtual Category Category { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

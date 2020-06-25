@@ -102,6 +102,7 @@
     <Compile Include="Order_detail.cs">
       <DependentUpon>Database.tt</DependentUpon>
     </Compile>
+    <Compile Include="Order_Item.cs" />
     <Compile Include="Position.cs">
       <DependentUpon>Database.tt</DependentUpon>
     </Compile>
