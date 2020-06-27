@@ -119,7 +119,7 @@ create table Order_detail (
 	Order_id int not null,
 	Quantity int not null,
 	Pro_id int not null,
-	order_note nvarchar(MAX) not null,
+	order_note nvarchar(MAX),
 	order_total_price float not null,
 	foreign key (Order_id) references [Order](Order_id),
 	foreign key (Pro_id) references Products(Pro_id),
